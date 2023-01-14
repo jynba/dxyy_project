@@ -1,0 +1,132 @@
+.container{
+    height: 100vh;
+    /* background-color: #fffdfd; */
+}
+.main {
+    position: relative;
+    padding: 0rpx 0rpx 100rpx;
+}
+.up {
+    width: 100%; 
+}
+.down {
+    position: absolute;
+    top: 420rpx;
+    left: -10rpx;
+	box-sizing: border-box;
+	width: 100%;
+    padding: 10rpx 30rpx;
+}
+.menu {
+    display: flex;
+	justify-content: space-around;
+	width: 100%;
+    padding: 20rpx 10rpx;
+}
+.menu .item {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 180rpx;
+    height: 180rpx;
+    box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.2);
+    border-radius: 20rpx;
+    background-color: #fff;
+    text-align: center;
+}
+.menu.img {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    width: 120rpx;
+	height: 120rpx;
+	border-radius: 15rpx;
+}
+.menu .img image {
+	width: 110rpx;
+	height: 110rpx;
+}
+.menu .title {
+	margin-top: 5rpx;
+	font-size: 30rpx;
+	color: #333;
+}
+.up image {
+	width: 100%;
+	height: 550rpx;
+}
+/* 活动列表 */
+.eventList{
+    /* width: 100%; */
+    height: 800rpx;
+    margin: 20rpx;
+    padding: 10rpx;
+    /* background-color: pink; */
+    border-radius: 8px;
+    box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.2);
+}
+.eventList .optionCard{
+    display: flex;
+	justify-content: space-around;
+    align-items: center;
+    height: 50rpx;
+    background-color: #fff;
+}
+.eventList .optionCard .all{
+    padding-bottom: 8rpx;
+    border-bottom: 2px solid #689bda;
+}
+/* .eventList .optionCard .optionItem{
+    position: relative;
+} */
+/* .eventList .optionCard .optionItem:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 100%;
+    height: 6rpx;
+    transition: 0.2s all linear;
+    background: #689bda;
+} */
+/* .active{
+    color: #689bda;
+} */
+.eventList .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200rpx;
+    margin: 20rpx;
+    padding: 10rpx;
+    background-color: #fff;
+    box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.2);
+    border-radius: 20rpx;
+    background: linear-gradient(180deg, #fff 0%,#eef4fc 100%);
+}
+.eventList .item .raceSystem{
+    padding: 8rpx;
+    margin-right: 20rpx;
+    /* border: 1px solid #689bda; */
+    background-color: #cddff5;
+    border-radius: 50rpx;
+    color: #689bda;
+    font-size: 24rpx;
+    font-weight: 700;
+}
+
+.eventList .item image{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 15rpx;
+    vertical-align:middle;
+}
+.eventList .item .itemName{
+    font-size: 35rpx;
+}
+.eventList .item .grey{
+    color: #707070;
+    font-size: 24rpx;
+    
+}

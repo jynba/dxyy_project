@@ -1,0 +1,4 @@
+<view class="myCard">
+    <view class="join cardClass"></view>
+    <view class="launch cardClass"></view>
+</view>

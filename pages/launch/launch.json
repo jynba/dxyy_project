@@ -1,0 +1,19 @@
+{
+  "usingComponents": {
+  "van-field": "@vant/weapp/field/index",
+  "van-calendar": "@vant/weapp/calendar/index",
+  "van-button": "@vant/weapp/button/index",
+  "van-stepper": "@vant/weapp/stepper/index",
+  "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+  "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+  "van-cell": "@vant/weapp/cell/index",
+  "van-cell-group": "@vant/weapp/cell-group/index",
+  "van-radio": "@vant/weapp/radio/index",
+  "van-radio-group": "@vant/weapp/radio-group/index",
+  "van-dialog": "@vant/weapp/dialog/index",
+  "van-collapse": "@vant/weapp/collapse/index",
+  "van-collapse-item": "@vant/weapp/collapse-item/index",
+  "van-toast": "@vant/weapp/toast/index"
+  },
+  "navigationBarTitleText": "发起活动"
+}

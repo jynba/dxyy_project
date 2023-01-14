@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/launch/launch"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#689bda",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar":{
+    "selectedColor": "#0d47a1", 
+    "list": [{ 
+    "pagePath":"pages/index/index",
+    "text":"定向越野",
+    "iconPath":"images/跑步.png",
+    "selectedIconPath":"images/跑步选中.png"
+    }, {
+    "pagePath":"pages/user/user",
+    "text":"我的运动",
+    "iconPath":"images/我的.png",
+    "selectedIconPath":"images/我的选中.png"
+    }
+    ]
+},
+  "sitemapLocation": "sitemap.json"
+
+}

@@ -1,0 +1,42 @@
+page{
+  background: linear-gradient(180deg, #fff 0%,#eef4fc 100%);
+  }
+.up{
+  height: 400rpx;
+  padding: 30rpx;
+  margin: 20rpx;
+  box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.6);
+  border-radius: 20rpx;
+  background: linear-gradient(180deg, #fff 0%,#eef4fc 100%);
+}
+.box image{
+  /* height: 100%; */
+  overflow: hidden;
+}
+.launchList{
+  margin: 20rpx;
+    padding: 10rpx;
+    border-radius: 8px;
+    box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.2);
+}
+.launchTime,.launchPerNumber{
+  position: relative;
+}
+
+.button{
+  position: absolute;
+  right: 20rpx;
+  top: 15rpx;
+  z-index: 2;/*高于input框，低于日历*/
+}
+.changeNumber{
+  position: absolute;
+  right: 20rpx;
+  top: 15rpx;
+}
+.group{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
