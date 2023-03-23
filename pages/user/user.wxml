@@ -1,4 +1,62 @@
-<view class="myCard">
-    <view class="join cardClass"></view>
-    <view class="launch cardClass"></view>
+<view class="page">
+    <view class="header">
+        <view class='background' style='height:200px'></view>
+        <input type="nickname" placeholder="请输入昵称" class="username" placeholder-style="color:#fff;" value="{{username}}" bindblur="nameOnblur" />
+        <view class="icon">
+            <view class="circle_icon"></view>
+            <view class="circle_icon" style="animation-delay:2s;"></view>
+            <view class="circle_icon" style="animation-delay:4s;"></view>
+            <button class='title_icon' open-type="chooseAvatar" bindchooseavatar="bindchooseavatar">
+                <image mode="aspectFill" style="width: 100%;height: 100%" src="{{avatarUrl}}"></image>
+            </button>
+        </view>
+    </view>
+    <view class="myCard">
+        <view class="launch cardClass" bindtap="myLaunch">
+            <image src="/images/idea2.png"></image>
+            <text class="textClass">创建的活动</text>
+        </view>
+        <view class="join cardClass" bindtap="myJoin">
+            <image src="/images/join2.png"></image>
+            <text class="textClass">加入的活动</text>
+        </view>
+    </view>
+    <view class="otherInfo">
+        <navigator class="help" url="../help/help">
+            <button hover-class="none">
+                <image src="/images/help.png"></image>
+                <view class="text">帮助中心</view>
+                <view class="arrow">
+                    <van-icon name="arrow" />
+                </view>
+            </button>
+        </navigator>
+        <view class="about">
+            <button hover-class="none">
+                <image src="/images/about.png"></image>
+                <view class="text">关于我们</view>
+                <view class="arrow">
+                    <van-icon name="arrow" />
+                </view>
+            </button>
+        </view>
+        <view class="share">
+            <button hover-class="none" open-type="share">
+                <image src="/images/share.png"></image>
+                <view class="text">转发分享</view>
+                <view class="arrow">
+                    <van-icon name="arrow" />
+                </view>
+            </button>
+        </view>
+        <view class="ask">
+            <button hover-class="none" open-type="contact" >
+                <image src="/images/ask.png"></image>
+                <view class="text">联系客服</view>
+                <view class="arrow">
+                    <van-icon name="arrow" />
+                </view>
+            </button>
+        </view>
+    </view>
 </view>

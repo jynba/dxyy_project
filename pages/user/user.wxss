@@ -1,14 +1,180 @@
-.myCard{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 450rpx;
-    /* background: linear-gradient(180deg, #fff 0%,#689bda 90%); */
-    background-color: #689bda;
+page {
+    background: linear-gradient(180deg, #fbfbfc 0%, #eef4fc 100%);
 }
-.cardClass{
-    width: 40%;
-    height: 100rpx;
-    margin-right: 20rpx;
-    background-color: pink;
+
+.page {
+    position: absolute;
+    height: 100%;
+}
+
+/*  #6BC5D2 #A5E9DB 769FCD F2A379 #90A4Ae
+  * header
+*/
+.header {
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    width: 750rpx;
+    position: relative;
+}
+
+.header .background {
+    top: -130rpx;
+    height: auto;
+    left: -100rpx;
+    width: 1000rpx;
+    position: relative;
+    z-index: -99;
+    transform: rotate(-8deg);
+    background: #689bda;
+}
+
+.bg {
+    height: 360rpx;
+    left: -100rpx;
+    position: absolute;
+    top: -100rpx;
+    transform: rotate(-8deg);
+    width: 1000rpx;
+    z-index: -99;
+}
+
+/* .title_text {
+    width: 100%;
+    color: white;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    font-size: 34rpx;
+} */
+
+.username {
+    position: absolute;
+    top: 42%;
+    left: 80rpx;
+    width: 350rpx;
+    height: 70rpx;
+    font-size: 60rpx;
+    font-weight: 700;
+    color: #fff;
+}
+
+.icon {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+}
+
+.title_icon {
+    position: absolute;
+    margin-left: 5rpx;
+    width: 180rpx;
+    height: 180rpx;
+    border: 8rpx solid hsla(0, 0%, 100%, .6);
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 0;
+    /*修改button的默认*/
+    box-sizing: content-box;
+    /*修改button的默认*/
+}
+
+.circle_icon {
+    animation: ani 6s linear infinite;
+    position: absolute;
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 200rpx;
+    background: hsla(0, 0%, 100%, .3);
+}
+
+/* 取消button的边框 */
+button::after {
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+/* 我参与的活动 我发起的活动 */
+.myCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cardClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43%;
+    height: 150rpx;
+    margin-bottom: 20rpx;
+    padding: 20rpx;
+    background-color: #fff;
+    box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.6);
+    border-radius: 20rpx;
+    box-sizing: border-box;
+}
+
+.cardClass image,
+.otherInfo image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+/* 其他信息 */
+.otherInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* width: 100%; */
+    padding: 0 20rpx;
+    margin: 20rpx;
+    background-color: #fff;
+    box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.6);
+    border-radius: 20rpx;
+    box-sizing: border-box;
+}
+
+.help,
+.about,
+.share,
+.ask {
+    position: relative;
+    display: flex ;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 50rpx 30rpx ;
+}
+button{
+    position: relative;
+    display: flex ;
+    /* justify-content: center; */
+    align-items: center;
+    background:none;
+    font-size: 16px;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.otherInfo .text {
+    padding-left: 30rpx;
+}
+
+.arrow {
+    position: absolute;
+    right: 0rpx;
 }

@@ -6,6 +6,7 @@
     position: relative;
     padding: 0rpx 0rpx 100rpx;
 }
+
 .up {
     width: 100%; 
 }
@@ -56,10 +57,22 @@
 	width: 100%;
 	height: 550rpx;
 }
+/* 今日活动 */
+.titleToday{
+    margin-bottom: 70rpx;
+    color: #689bda;
+    font-size: 35rpx;
+    text-align: center;
+}
+.titleToday text{
+    padding-bottom: 20rpx;
+    border-radius: 4rpx;
+    border-bottom: 3px solid #689bda;
+}
 /* 活动列表 */
 .eventList{
     /* width: 100%; */
-    height: 800rpx;
+    min-height: 700rpx;
     margin: 20rpx;
     padding: 10rpx;
     /* background-color: pink; */
@@ -97,13 +110,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 200rpx;
+    height: 360rpx;
     margin: 20rpx;
-    padding: 10rpx;
-    background-color: #fff;
+    padding: 0 10rpx 10rpx;
+    background-color: pink;
     box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.2);
     border-radius: 20rpx;
     background: linear-gradient(180deg, #fff 0%,#eef4fc 100%);
+}
+.eventList .item .detail{
+    padding: 10rpx;
 }
 .eventList .item .raceSystem{
     padding: 8rpx;
@@ -112,7 +128,7 @@
     background-color: #cddff5;
     border-radius: 50rpx;
     color: #689bda;
-    font-size: 24rpx;
+    font-size: 30rpx;
     font-weight: 700;
 }
 
@@ -123,10 +139,51 @@
     vertical-align:middle;
 }
 .eventList .item .itemName{
-    font-size: 35rpx;
+    font-size: 40rpx;
 }
 .eventList .item .grey{
     color: #707070;
-    font-size: 24rpx;
+    font-size: 30rpx;
     
 }
+
+/* 列表没有数据时显示 */
+.nodataImgContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nodataImg {
+    transform: translateY(-40rpx);
+    opacity: 0.8;
+  }
+  
+  .nodataTextContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .nodataText {
+    position: absolute;
+    top: -120rpx;
+    left: 30%;
+    text-align: center;
+    font-size: 30rpx;
+    color: #808080;
+  }
+  
+  .nodataText view:first-child {
+    margin-bottom: 10rpx;
+  }
+
+/* 删除活动 */
+  .delete{
+    background-color: #ff5252;
+    height: inherit;
+    width: 120rpx;
+    color: white;
+    border-radius: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

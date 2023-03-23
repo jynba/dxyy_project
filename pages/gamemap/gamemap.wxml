@@ -1,0 +1,64 @@
+<scroll-view id="wrap" scroll-y="true">
+    <view id="content">
+        <view class="topTitle">
+            <text>游戏模式：{{mode}}</text>
+            <!-- 猜地点模式 右上角的地点提示列表 -->
+            <!-- 排行榜 -->
+            <view class="ranking" bindtap="checkRanking">
+                <image src="/images/rankicon.png" />
+                <text>排行榜</text>
+            </view>
+            <view class="lenmessage"> {{lenmessage}} </view>
+            <view class="checkdetail" bindtap="checkdetail" wx:if="{{tipsMessage.length}}">
+                <image src="/images/pointdetail.png" />
+                <text>地点提示</text>
+            </view>
+        </view>
+        <van-dialog use-slot title="地点提示信息" show="{{showTips }}" bind:close="onCloseTips" confirm-button-color="#789dba" confirm-button-text="了解">
+            <view class="middlecontent">
+                <view class="pointTip" wx:for="{{tipsMessage}}">
+                    <text class="dot">•</text>
+                    <view class="box">
+                        <text>{{item.Posmessage}}</text>
+                        <image src="/images/showpic.png" class="showpic" wx:if="{{item.fileList.length}}" bindtap="showPointImg" data-src="{{item.fileList[0].url}}" />
+                    </view>
+                    <image src="/images/finish.png" class="finish" wx:if="{{item.isFinish}}" />
+                    <image src="/images/unfinish.png" class="finish" wx:if="{{!item.isFinish}}" />
+                </view>
+            </view>
+        </van-dialog>
+
+
+        <!-- map start -->
+        <view class="maptype">
+            <view class="content">
+                <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" polyline="{{enableShowPolyline?polyline:[]}}" markers="{{markers}}" setting="{{setting}}" bindlabeltap="onPointTap" bindmarkertap="onPointTap"></map>
+                <van-dialog use-slot title="坐标点描述信息" show="{{showModal }}" bind:close="onClose">
+                    <van-field model:value="{{ Postitle }}" placeholder="名称" required readonly />
+                    <van-field model:value="{{ Posmessage }}" placeholder="描述信息" readonly />
+                    <van-uploader style="display: flex; justify-content: center;" file-list="{{ fileList }}" disabled deletable="{{ false }}" use-before-read bind:before-read="beforeRead" bind:after-read="afterRead" show-upload="{{false}}" />
+                </van-dialog>
+                <view class="activity">
+                    <image src="/images/refresh.png" class="randPos" catchtap="clickRefresh"></image>
+                    <view catchtap="satelliteChange" class="controls" style="background-color:{{satellitecolor}}">
+                        <image src="/images/switch.png" class="switch"></image>
+                    </view>
+                    <image class="aim" catchtap="showCurPos" src="/images/aim.png"></image>
+                    <view catchtap="ShowPolyline" class="controls" style="background-color:{{polylinecolor}}">
+                        <view>轨迹</view>
+                    </view>
+                    <view catchtap="showPoint" class="controls">
+                        <view>全览</view>
+                    </view>
+                    <!-- 开始按钮样式 -->
+                    <view catchtap="Start" wx:if="{{isHost && !startState}}" class="controls" >
+                        <view>开始</view>
+                    </view>
+                    <view catchtap="ForceEnd" wx:if="{{startState && !endState}}" class="controls" >
+                        <view>结束</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

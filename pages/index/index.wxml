@@ -1,137 +1,84 @@
 <view class="container">
+    <!-- 上方图片和加入发起 -->
     <view class="main">
+        <!-- 上方图片 -->
         <view class="up">
             <image mode="aspectFill" src="/images/01.png"></image>
         </view>
+        <!-- 加入与发起 -->
         <view class="down">
             <view class="menu">
-                <view class="item" bindtap="showPopup">
-                    <view class="img"><image src="/images/enter.png" /></view>
+                <view class="item" bindtap="onOpenJoinActivity">
+                    <view class="img">
+                        <image src="/images/enter.png" />
+                    </view>
                     <view class="title">加入活动</view>
                 </view>
                 <view class="item" bindtap="launchActivity">
-                    <view class="img"><image src="/images/launch.png" /></view>
+                    <view class="img">
+                        <image src="/images/launch.png" />
+                    </view>
                     <view class="title">发起活动</view>
                 </view>
             </view>
         </view>
     </view>
 
+    <!--今日活动 -->
     <view class="eventList">
-        <!-- <view class="optionCard" wx:for="{{optionCard}}" wx:key="index">
-            <view class="optionItem" bindtap="tabBtn({{index}})">
-                {{item}}
+        <view class="titleToday">
+            <text>今日活动</text>
+        </view>
+        <view class="item" wx:for="{{eventList}}" wx:key="index" wx:if="{{isHaveGoingData&&item.status==1}}">
+            <navigator url="/pages/gamemap/gamemap?id={{item._id}}">
+                <view class="title detail">
+                    <text class="raceSystem">{{item.itemRaceSystem}}</text>
+                    <text class="itemName">{{item.itemName}}</text>
+                </view>
+                <view class="host detail">
+                    <image src="/images/host2.png"></image>
+                    <text class="grey">{{item.itemHost}}</text>
+                </view>
+                <view class="time detail">
+                    <image src="/images/time.png"></image>
+                    <text class="grey">{{item.itemDate}} 14:30-17:30</text>
+                </view>
+                <view class="mode detail">
+                    <image src="/images/mapIcon.png" />
+                    <text class="grey">{{item.active==0?'随机点模式':item.active==1?'自定义模式':'猜地点模式'}}</text>
+                </view>
+                <view class="person detail">
+                    <image src="/images/person.png"></image>
+                    <text class="grey">{{item.itemMaxPeople}}人</text>
+                </view>
+            </navigator>
+        </view>
+        <!-- 今日没有活动时 -->
+        <view class="nodata" wx:if="{{!isHaveGoingData}}">
+            <view class="nodataImgContainer">
+                <image src="/images/noData.png" class="nodataImg"></image>
             </view>
-        </view> -->
-        <!-- <view class="optionCard">
-            <text class="all active">全部活动</text>
-            <text class="ing">正在进行</text>
-            <text class="over">已结束</text>
-        </view> -->
-        <van-tabs active="{{ active }}" bind:change="onChange" swipeable title-style="test" line-width="150rpx" >
-          <van-tab title="全部活动">
-            <view class="item">
-            <view class="title">
-                <text class="raceSystem">个人赛</text>
-                <text class="itemName">拥抱青春</text>
-            </view>
-            <view class="location">
-                <image src="/images/location.png"></image>
-                <text class="grey">东莞理工学院假草</text>
-            </view>
-            <view class="time">
-                <image src="/images/time.png"></image>
-                <text class="grey">2.19(周日) 14:30-17:30</text>
-            </view>
-            <view class="person">
-                <image src="/images/person.png"></image>
-                <text class="grey">5/12</text>
+            <view class="nodataTextContainer">
+                <view class="nodataText">
+                    <view>您今日没有活动</view>
+                    <view>快去加入/发起活动吧!</view>
+                </view>
             </view>
         </view>
-          </van-tab>
-          <van-tab title="正在进行">
-            <view class="item">
-            <view class="title">
-                <text class="raceSystem">个人赛</text>
-                <text class="itemName">冲冲冲</text>
-            </view>
-            <view class="location">
-                <image src="/images/location.png"></image>
-                <text class="grey">东莞理工学院</text>
-            </view>
-            <view class="time">
-                <image src="/images/time.png"></image>
-                <text class="grey">2.21(周二) 14:30-16:30</text>
-            </view>
-            <view class="person">
-                <image src="/images/person.png"></image>
-                <text class="grey">20/20</text>
-            </view>
-        </view>
-          </van-tab>
-          <van-tab title="已结束">
-            <view class="item">
-            <view class="title">
-                <text class="raceSystem">团体赛</text>
-                <text class="itemName">尽情去奔跑吧！</text>
-            </view>
-            <view class="location">
-                <image src="/images/location.png"></image>
-                <text class="grey">东莞理工学院</text>
-            </view>
-            <view class="time">
-                <image src="/images/time.png"></image>
-                <text class="grey">12.20(周六) 16：30-17:30</text>
-            </view>
-            <view class="person">
-                <image src="/images/person.png"></image>
-                <text class="grey">12/15</text>
-            </view>
-        </view>
-          </van-tab>
-        </van-tabs>
- 
-        
-        
-        
     </view>
 </view>
-<van-popup
- show="{{ show }}"
- position="bottom"
- bind:close="onClose"
- safe-area-inset-bottom="true"
- >
- <van-cell-group>
-  <van-field
-    value="{{ activityID }}"
-    type="number"
-    label="活动ID"
-    maxlength="6"
-    placeholder="请输入活动ID"
-    required
-    clearable
-    bind:change="onInputID"
-/>
-<van-field
-    value="{{ password }}"
-    type="number"
-    label="密码"
-    placeholder="请输入四位密码"
-    maxlength="4"
-    required
-    clearable
-    bind:change="onInputID"
-/>
-<van-field
-    value="{{ activityName }}"
-    label="活动内昵称"
-    placeholder="请输入活动内昵称(10字以内)"
-    required
-    clearable
-    maxlength="10"
-/>
-<van-button size="large" color="#689bda" round="true" bindtap="toConfirm">确定</van-button>
-</van-cell-group>
- </van-popup>
- <van-toast id="van-toast" />
+<!-- 加入活动 -->
+<view class="joinActivity">
+    <van-popup show="{{ showJoinActivity }}" position="bottom" bind:close="onCloseJoinActivity" safe-area-inset-bottom="true">
+        <van-cell-group>
+            <van-field model:value="{{ activityID }}" type="number" label="活动ID" maxlength="6" placeholder="请输入六位活动ID" required clearable />
+            <van-field model:value="{{ activitypassword }}" type="number" label="密码" placeholder="请输入四位密码" maxlength="4" required clearable />
+            <van-field model:value="{{ activityName }}" label="活动内昵称" placeholder="请输入活动内昵称(10字以内)" required clearable maxlength="10" />
+            <van-button size="large" color="#689bda" round="true" bindtap="toConfirmJoinActivity">确定</van-button>
+        </van-cell-group>
+    </van-popup>
+    <!-- 加入活动成功提示 -->
+    <van-toast id="van-toast" />
+</view>
+
+<van-dialog id="van-dialog" confirm-button-color="#689bda" />

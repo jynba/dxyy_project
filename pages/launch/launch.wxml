@@ -1,135 +1,58 @@
 <view class="up">
-  <image src="/images/banner.png"></image>
+    <image src="/images/banner.png"></image>
 </view>
 <view class="launchList">
-<!-- 活动名称 -->
-  <van-field
-    value="{{ launchName }}"
-    type="text"
-    label="活动名称"
-    maxlength="20"
-    placeholder="请输入活动名称"
-    required
-    clearable
-    bind:change="onInputID"
-/>
-<!-- 主办方 -->
-<van-field
-    value="{{ launchHost }}"
-    label="主办方"
-    placeholder="请输入主办方"
-    required
-    clearable
-    maxlength="10"
-/>
-<!-- 活动密码 -->
-<van-field
-    value="{{ launchPassword }}"
-    type="number"
-    label="活动密码"
-    placeholder="请设置4位密码"
-    maxlength="4"
-    required
-    clearable
-    bind:change="onInputID"
-/>
-<!-- 活动时间 -->
-<view class="launchTime">
-  <van-field
-    value="{{ date }}"
-    label="活动时间"
-    placeholder="请选择活动时间"
-    required
-    readonly="true"
-    clearable
-/>
-<view class="button">
-  <van-button size="small" color="#689bda" bindtap="onDisplay">打开日历</van-button>
-</view>
-</view>
-
-<!-- 活动最大人数 -->
-<view class="launchPerNumber">
-  <van-field
-    value="{{ launchPerNumber }}"
-    label="活动最大人数"
-    required
-    readonly="true"
-    bind:change="onInputID"
-/>
-<view class="changeNumber">
-    <van-stepper value="{{ 1 }}" max="100" integer theme="round"/>
-  </view>
-</view>
-<!-- 活动描述 -->
-<van-cell-group>
-  <van-field
-    value="{{ message }}"
-    label="活动描述"
-    type="textarea"
-    placeholder="请输入活动描述"
-    autosize
-    border="{{ false }}"
-  />
-</van-cell-group>
-
-
-  <!-- 活动模式 -->
-  <van-collapse value="{{ activeNames }}" bind:change="onChangeMode">
-  <van-collapse-item title="活动模式" name="1">
-    <van-radio-group value="{{ radio }}" bind:change="onChange">
-  <van-cell-group>
-    <van-cell title="坐标随机模式" clickable data-name="1" bind:click="onClick">
-      <van-radio slot="right-icon" name="1" />
-    </van-cell>
-    <van-cell title="坐标自定义模式" clickable data-name="2" bind:click="onClick">
-      <van-radio slot="right-icon" name="2" />
-    </van-cell>
-      <van-cell title="猜地点模式" clickable data-name="3" bind:click="onClick">
-      <van-radio slot="right-icon" name="3" />
-    </van-cell>
-  </van-cell-group>
-<van-dialog
-    id="van-dialog"
-    confirm-button-color="#689bda"
-/>
-</van-radio-group>
-  </van-collapse-item>
-
-</van-collapse>
-
-
-<!-- 赛制选择 -->
-<van-dropdown-menu active-color="#689bda">
-  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:change="onSwitch1Change"/>
-</van-dropdown-menu>
-<!-- 团体赛才展示 -->
-<view wx:if="{{detail==2}}" class="group">
-    <view class="launchPerNumber">
-  <van-field
-    value="{{ launchPerNumber }}"
-    label="小队人数"
-    required
-    readonly="true"
-    bind:change="onInputID"
-/>
-<view class="changeNumber">
-    <van-stepper value="{{ 1 }}" max="100" integer theme="round"/>
-  </view>
+    <!-- 活动名称 -->
+    <van-field model:value="{{ itemName }}" type="text" label="活动名称" maxlength="20" placeholder="请输入活动名称" required clearable />
+    <!-- 主办方 -->
+    <van-field model:value="{{ itemHost }}" label="主办方" placeholder="请输入主办方" required clearable maxlength="10" />
+    <!-- 活动ID -->
+    <van-field model:value="{{ itemID }}" type="number" label="活动ID" placeholder="请设置6位活动ID" maxlength="6" required clearable />
+    <!-- 活动密码 -->
+    <van-field model:value="{{ itemPassword }}" type="number" label="活动密码" placeholder="请设置4位密码" maxlength="4" required clearable />
+    <!-- 活动时间 -->
+    <view class="launchTime">
+        <van-field model:value="{{ itemDate }}" label="活动时间" placeholder="请选择活动时间" required readonly="true" clearable />
+        <view class="button">
+            <van-button size="small" color="#689bda" bindtap="onDisplayCalendar">打开日历</van-button>
+        </view>
     </view>
-    <van-field
-    value="{{ launchPassword }}"
-    type="number"
-    label="队长密匙"
-    placeholder="请设置4位密码"
-    maxlength="4"
-    required
-    clearable
-    bind:change="onInputID"
-    />
-  </view>
+
+    <!-- 活动最大人数 -->
+    <view class="launchPerNumber">
+        <van-field label="活动最大人数" required readonly="true" />
+        <view class="changeNumber">
+            <van-stepper value="{{ itemMaxPeople }}" max="100" integer theme="round" bind:change="changeMaxNumber" />
+        </view>
+    </view>
+    <!-- 活动描述 -->
+    <van-field model:value="{{ itemMessage }}" label="活动描述" type="textarea" placeholder="请输入活动描述" autosize clearable />
+
+    <!-- 活动模式 -->
+    <view>
+        <van-cell title="活动模式" value="{{modeEditTip}}" bindtap="handleTap"  is-link required  />
+        <!-- 提示信息 -->
+        <view class="tipContainer" bindtap="showModeTip">
+            <van-tag type="primary" color="#689bda" custom-class="tip">提示</van-tag>
+        </view>
+        <van-dialog id="van-dialog" confirm-button-color="#689bda" />
+    </view>
+
+    <!-- 赛制选择 -->
+    <van-dropdown-menu active-color="#689bda">
+        <van-dropdown-item value="{{ 0 }}" options="{{ raceSystemOptions }}" bind:change="onChangeRace" />
+    </van-dropdown-menu>
+    <!-- 团体赛才展示 -->
+    <view wx:if="{{raceSystemNum==2}}" class="group">
+        <view class="launchPerNumber">
+            <van-field label="队伍个数" required readonly="true" />
+            <view class="changeNumber">
+                <van-stepper value="{{launchTeamNumber}}" max="100" integer theme="round" bind:change="changeTeamNumber" />
+            </view>
+        </view>
+    </view>
 
 </view>
-<van-button size="large" color="#689bda" round="true" bindtap="toConfirm">提交</van-button>
-<van-calendar color="#689bda" show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" />
+<van-button size="large" color="#689bda" round="true" bindtap="toConfirmLaunchActivity">提交</van-button>
+<van-calendar color="#689bda" show="{{ showCalendar }}" bind:close="onCloseCalendar" bind:confirm="onConfirmDate" />
 <van-toast id="van-toast" />
