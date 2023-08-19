@@ -1,0 +1,56 @@
+page {
+    background: linear-gradient(180deg, #fff 0%, #eef4fc 100%);
+}
+
+.up {
+    position: relative;
+    height: 400rpx;
+    padding: 30rpx;
+    margin: 20rpx;
+    box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.6);
+    border-radius: 20rpx;
+    background: linear-gradient(180deg, #fff 0%, #eef4fc 100%);
+    overflow: hidden;
+}
+.mainImg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204, 204, 204, 0.808);
+    border-radius: 20rpx;
+}
+.float {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.camera {
+    margin-right: 20rpx;
+    width: 90rpx;
+    height: 80rpx;
+    z-index: 1;
+}
+
+.text {
+    width: 100%;
+    color: #fff;
+    font-size: 50rpx;
+    font-weight: 700;
+    Letter-spacing:2rpx;
+}
+
+.designList {
+    margin: 20rpx;
+    padding: 10rpx;
+    border-radius: 8px;
+    box-shadow: 6rpx 6rpx 8rpx rgba(200, 206, 208, 0.2);
+}

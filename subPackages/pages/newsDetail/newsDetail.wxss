@@ -1,0 +1,38 @@
+.news{
+    margin: 30rpx;
+}
+.title{
+    font-size: 40rpx;
+    font-weight: 700;
+}
+.tag{
+    display: flex;
+    margin: 30rpx 0;
+    font-size: 30rpx;
+}
+.author{
+    margin-right: 40rpx;
+    color: rgb(5, 177, 235);
+}
+.date{
+    color: #666;
+}
+.article{
+    text-align: center;
+}
+.imageMarker{
+    margin: 20rpx 0 40rpx;
+    font-size: 30rpx;
+    color: #666;
+}
+.p{
+    margin-bottom: 20rpx;
+    text-align: left;
+    line-height: 60rpx;
+    text-indent: 2em;
+}
+.subtitle{
+    text-align: left;
+    font-weight: 700;
+    line-height: 60rpx;
+}

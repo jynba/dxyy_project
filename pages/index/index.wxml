@@ -29,32 +29,59 @@
         <view class="titleToday">
             <text>今日活动</text>
         </view>
-        <view class="item" wx:for="{{eventList}}" wx:key="index" wx:if="{{isHaveGoingData&&item.status==1}}">
-            <navigator url="/pages/gamemap/gamemap?id={{item._id}}">
-                <view class="title detail">
-                    <text class="raceSystem">{{item.itemRaceSystem}}</text>
-                    <text class="itemName">{{item.itemName}}</text>
-                </view>
-                <view class="host detail">
-                    <image src="/images/host2.png"></image>
-                    <text class="grey">{{item.itemHost}}</text>
-                </view>
-                <view class="time detail">
-                    <image src="/images/time.png"></image>
-                    <text class="grey">{{item.itemDate}} 14:30-17:30</text>
-                </view>
-                <view class="mode detail">
-                    <image src="/images/mapIcon.png" />
-                    <text class="grey">{{item.active==0?'随机点模式':item.active==1?'自定义模式':'猜地点模式'}}</text>
-                </view>
-                <view class="person detail">
-                    <image src="/images/person.png"></image>
-                    <text class="grey">{{item.itemMaxPeople}}人</text>
-                </view>
-            </navigator>
+        <view class="item" wx:for="{{eventList}}" wx:key="index">
+            <view wx:if="{{!item.endState}}">
+                <navigator url="/subPackages/pages/gamemap/gamemap?id={{item._id}}">
+                    <view class="title detail">
+                        <text class="raceSystem">{{item.itemRaceSystem}}</text>
+                        <text class="itemName">{{item.itemName}}</text>
+                    </view>
+                    <view class="host detail">
+                        <image src="/images/host2.png"></image>
+                        <text class="grey">{{item.itemHost}}</text>
+                    </view>
+                    <view class="time detail">
+                        <image src="/images/time.png"></image>
+                        <text class="grey">{{item.itemDate}} 14:30-17:30</text>
+                    </view>
+                    <view class="mode detail">
+                        <image src="/images/mapIcon.png" />
+                        <text class="grey">{{item.active==0?'随机点模式':item.active==1?'自定义模式':'猜地点模式'}}</text>
+                    </view>
+                    <view class="person detail">
+                        <image src="/images/person.png"></image>
+                        <text class="grey">{{item.itemMaxPeople}}人</text>
+                    </view>
+                </navigator>
+            </view>
+            <!-- 活动结束跳转详情页 -->
+            <view wx:else>
+                <navigator url="/subPackages/pages/myjoinDetail/myjoinDetail?id={{item._id}}">
+                    <view class="title detail">
+                        <text class="raceSystem">{{item.itemRaceSystem}}</text>
+                        <text class="itemName">{{item.itemName}}</text>
+                    </view>
+                    <view class="host detail">
+                        <image src="/images/host2.png"></image>
+                        <text class="grey">{{item.itemHost}}</text>
+                    </view>
+                    <view class="time detail">
+                        <image src="/images/time.png"></image>
+                        <text class="grey">{{item.itemDate}} 14:30-17:30</text>
+                    </view>
+                    <view class="mode detail">
+                        <image src="/images/mapIcon.png" />
+                        <text class="grey">{{item.active==0?'随机点模式':item.active==1?'自定义模式':'猜地点模式'}}</text>
+                    </view>
+                    <view class="person detail">
+                        <image src="/images/person.png"></image>
+                        <text class="grey">{{item.itemMaxPeople}}人</text>
+                    </view>
+                </navigator>
+            </view>
         </view>
         <!-- 今日没有活动时 -->
-        <view class="nodata" wx:if="{{!isHaveGoingData}}">
+        <view class="nodata" wx:if="{{!isHaveData}}">
             <view class="nodataImgContainer">
                 <image src="/images/noData.png" class="nodataImg"></image>
             </view>
@@ -74,6 +101,7 @@
             <van-field model:value="{{ activityID }}" type="number" label="活动ID" maxlength="6" placeholder="请输入六位活动ID" required clearable />
             <van-field model:value="{{ activitypassword }}" type="number" label="密码" placeholder="请输入四位密码" maxlength="4" required clearable />
             <van-field model:value="{{ activityName }}" label="活动内昵称" placeholder="请输入活动内昵称(10字以内)" required clearable maxlength="10" />
+            <van-field model:value="{{ teamNumber }}"  type="number"  label="队伍编号" placeholder="请输入队伍编号（从1开始）" clearable />
             <van-button size="large" color="#689bda" round="true" bindtap="toConfirmJoinActivity">确定</van-button>
         </van-cell-group>
     </van-popup>

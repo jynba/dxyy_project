@@ -1,14 +1,36 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/launch/launch",
-        "pages/diymap/diymap",
-        "pages/gamemap/gamemap",
-        "pages/user/user",
-        "pages/help/help",
-        "pages/myjoin/myjoin",
-        "pages/ranking/ranking"
+        "pages/community/community",
+        "pages/home/home",
+        "pages/user/user"
     ],
+    "subpackages": [
+        {
+            "root": "subPackages",
+            "pages": [
+                "pages/launch/launch",
+                "pages/diymap/diymap",
+                "pages/gamemap/gamemap",
+                "pages/help/help",
+                "pages/myjoin/myjoin",
+                "pages/myjoinDetail/myjoinDetail",
+                "pages/shareCard/shareCard",
+                "pages/ranking/ranking",
+                "pages/edit/edit",
+                "pages/communityDetail/communityDetail",
+                "pages/moments/moments",
+                "pages/specificSite/specificSite",
+                "pages/shareMyDesign/shareMyDesign",
+                "pages/newsMore/newsMore",
+                "pages/newsDetail/newsDetail",
+                "pages/activityDetail/activityDetail",
+                "pages/activityDetailPoints/activityDetailPoints",
+                "pages/mycreate/mycreate"
+            ]
+        }
+    ],
+    "lazyCodeLoading": "requiredComponents",
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#689bda",
@@ -25,10 +47,22 @@
                 "selectedIconPath": "images/run_select.png"
             },
             {
+                "pagePath": "pages/community/community",
+                "text": "社区",
+                "iconPath": "images/community.png",
+                "selectedIconPath": "images/community_select.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "发现",
+                "iconPath": "images/find.png",
+                "selectedIconPath": "images/find_select.png"
+            },
+            {
                 "pagePath": "pages/user/user",
                 "text": "我的运动",
-                "iconPath": "images/my.png",
-                "selectedIconPath": "images/my_select.png"
+                "iconPath": "images/user.png",
+                "selectedIconPath": "images/user_select.png"
             }
         ]
     },
@@ -44,6 +78,7 @@
     "requiredPrivateInfos": [
         "getLocation",
         "onLocationChange",
+        "startLocationUpdate",
         "startLocationUpdateBackground"
     ]
 }

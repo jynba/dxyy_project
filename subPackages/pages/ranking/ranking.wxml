@@ -1,0 +1,219 @@
+<view wx:if="{{!isDK}}">
+    <!-- 前三名 -->
+    <view class="top3">
+        <!-- 第二名，下标为1 -->
+        <view class="toptwo" wx:for="{{users}}" wx:key='index' wx:if="{{index==1}}">
+            <!-- 头像 -->
+            <view class="avatar1">
+                <image src="/images/second.png" class="second" /><!-- 皇冠 -->
+                <image src="{{item.iconPath}}" class="userAvatar" />
+            </view>
+            <view class="userInfo">
+                <!-- 昵称 -->
+                <view class="userName">
+                    <text>{{item.username}}</text>
+                </view>
+                <!-- 三行信息 -->
+                <view class="achieve">
+                    <view class="text">
+                        <text>完成数：{{item.reachPoints?item.reachPoints:0}}个</text>
+                    </view>
+                    <view class="text">
+                        <text>公里数：{{item.totallen}}km</text>
+                    </view>
+                    <view class="text">
+                        <text>时间：{{item.costTime}}min</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- 第一名，下标为0 -->
+        <view class="topone" wx:for="{{users}}" wx:key='index' wx:if="{{index==0}}">
+            <view class="avatar2">
+                <image src="/images/first.png" class="first" />
+                <image src="{{item.iconPath}}" class="userAvatar" />
+            </view>
+            <view class="userInfo">
+                <view class="userName">
+                    <text>{{item.username}}</text>
+                </view>
+                <view class="achieve">
+                    <view class="text">
+                        <text>完成数：{{item.reachPoints?item.reachPoints:0}}个</text>
+                    </view>
+                    <view class="text">
+                        <text>公里数：{{item.totallen}}km</text>
+                    </view>
+                    <view class="text">
+                        <text>时间：{{item.costTime}}min</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- 第三名，下标为2 -->
+        <view class="topthree" wx:for="{{users}}" wx:key='index' wx:if="{{index==2}}">
+            <view class="avatar3">
+                <image src="/images/third.png" class="third" />
+                <image src="{{item.iconPath}}" class="userAvatar" />
+            </view>
+            <view class="userInfo">
+                <view class="userName">
+                    <text>{{item.username}}</text>
+                </view>
+                <view class="achieve">
+                    <view class="text">
+                        <text>完成数：{{item.reachPoints?item.reachPoints:0}}个</text>
+                    </view>
+                    <view class="text">
+                        <text>公里数：{{item.totallen}}km</text>
+                    </view>
+                    <view class="text">
+                        <text>时间：{{item.costTime}}min</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 排行榜 -->
+    <view class="ranking">
+        <!-- 排行榜首部 -->
+        <view class="rankTitle">
+            <text>排名</text>
+            <text>昵称</text>
+            <text>完成数</text>
+            <text>公里数</text>
+            <text>时间</text>
+        </view>
+        <!-- 每个用户一行的数据,列表从第四名开始 -->
+        <view class="useritem" wx:for="{{users}}" wx:key='index' wx:if="{{index > 2}}">
+            <!-- 排名 -->
+            <text class="rankNum">{{index+1}}</text>
+            <!-- 头像昵称 -->
+            <view class="userbox">
+                <image class="useravatar" src="{{item.iconPath}}" />
+                <view class="username">{{item.username}}</view>
+            </view>
+            <!-- 完成的地点个数 -->
+            <text class="finishNum">{{item.reachPoints?item.reachPoints:0}}</text>
+            <!-- 公里数 -->
+            <text class="finishkm">{{item.totallen}}km</text>
+            <!-- 完成时间 -->
+            <text class="finishTime">{{item.costTime}}min</text>
+        </view>
+        <!-- 当人数不够(<4人)时，排行榜为空 -->
+        <view class="nodata" wx:if="{{!isHavePeople}}">
+            <view class="nodataImgContainer">
+                <image src="/images/noData.png" class="nodataImg"></image>
+            </view>
+            <view class="nodataTextContainer">
+                <view class="nodataText">
+                    <view>活动参与者不足</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view wx:else>
+    <!-- 前三名 -->
+<view class="top3">
+    <!-- 第二名，下标为1 -->
+    <view class="toptwo" wx:for="{{users}}"wx:key='index' wx:if="{{index==1}}">
+        <!-- 头像 -->
+        <view class="avatar1">
+            <image src="/images/second.png" class="second" /><!-- 皇冠 -->
+            <image src="{{item.iconPath}}" class="userAvatar" />
+        </view>
+        <view class="userInfo">
+            <!-- 昵称 -->
+            <view class="userName">
+                <text>{{item.username}}</text>
+            </view>
+            <!-- 三行信息 -->
+            <view class="achieve">
+                <view class="text">
+                    <text>完成数：{{item.reachPoints?item.reachPoints:0}}个</text>
+                </view>
+                <view class="text"  style="margin-top: 20rpx !important;">
+                    <text>时间：{{item.costTime}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 第一名，下标为0 -->
+    <view class="topone" wx:for="{{users}}"wx:key='index' wx:if="{{index==0}}">
+        <view class="avatar2">
+            <image src="/images/first.png" class="first" />
+            <image src="{{item.iconPath}}" class="userAvatar" />
+        </view>
+        <view class="userInfo">
+            <view class="userName">
+                <text>{{item.username}}</text>
+            </view>
+            <view class="achieve">
+                <view class="text">
+                    <text>完成数：{{item.reachPoints?item.reachPoints:0}}个</text>
+                </view>
+                <view class="text" style="margin-top: 20rpx !important;">
+                    <text>时间：{{item.costTime}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 第三名，下标为2 -->
+    <view class="topthree" wx:for="{{users}}"wx:key='index' wx:if="{{index==2}}">
+        <view class="avatar3">
+            <image src="/images/third.png" class="third" />
+            <image src="{{item.iconPath}}" class="userAvatar"/>
+        </view>
+        <view class="userInfo">
+            <view class="userName">
+                <text>{{item.username}}</text>
+            </view>
+            <view class="achieve">
+                <view class="text">
+                    <text>完成数：{{item.reachPoints?item.reachPoints:0}}个</text>
+                </view>
+                <view class="text"  style="margin-top: 20rpx !important;">
+                    <text>时间：{{item.costTime}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 排行榜 -->
+<view class="ranking">
+    <!-- 排行榜首部 -->
+    <view class="rankTitle">
+        <text>排名</text>
+        <text>昵称</text>
+        <text>完成数</text>
+        <text>时间</text>
+    </view>
+    <!-- 每个用户一行的数据,列表从第四名开始 -->
+    <view class="useritem" wx:for="{{users}}"wx:key='index' wx:if="{{index > 2}}">
+        <!-- 排名 -->
+        <text class="rankNum">{{index+1}}</text>
+        <!-- 头像昵称 -->
+        <view class="userbox" style="margin-left: 25rpx !important;">
+            <image class="useravatar" src="{{item.iconPath}}" />
+            <view class="username">{{item.username}}</view>
+        </view>
+        <!-- 完成的地点个数 -->
+        <text class="finishNum" style="margin: 0 0 0 68rpx;">{{item.reachPoints?item.reachPoints:0}}</text>
+
+        <!-- 完成时间 -->
+        <text class="finishTime" >{{item.costTime}}</text>
+    </view>
+    <!-- 当人数不够(<4人)时，排行榜为空 -->
+    <view class="nodata" wx:if="{{!isHavePeople}}">
+        <view class="nodataImgContainer">
+            <image src="/images/noData.png" class="nodataImg"></image>
+        </view>
+        <view class="nodataTextContainer">
+            <view class="nodataText">
+                <view>活动参与者不足</view>
+            </view>
+        </view>
+    </view>
+</view>
+</view>

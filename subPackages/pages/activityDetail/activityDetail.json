@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "van-icon": "@vant/weapp/icon/index",
+        "van-button": "@vant/weapp/button/index",
+        "van-dialog": "@vant/weapp/dialog/index",
+        "van-field": "@vant/weapp/field/index"
+    },
+    "navigationBarTitleText": "活动详情"
+}

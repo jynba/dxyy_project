@@ -1,0 +1,51 @@
+.imgBox{
+    height: 480rpx;
+    width: 100%;
+    margin-bottom: 20rpx;
+}
+.topImg{
+    width: 100%;
+}
+.intruduction{
+    margin: 30rpx;
+    padding-bottom: 200rpx;
+}
+.intruduction .title{
+    font-size: 36rpx;
+}
+.location{
+    margin: 20rpx 0;
+    display: flex;
+    color: #333;
+    font-size: 26rpx;
+}
+
+.location .icon{
+    margin-right: 10rpx;
+    width: 35rpx;
+    height: 35rpx;
+    flex-shrink:0;
+}
+.article{
+    text-align: center;
+    line-height: 60rpx;
+}
+
+.p{
+    margin-bottom: 20rpx;
+    text-align-last: left;
+    text-indent: 2em;
+}
+.bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgba(153, 153, 153, 0.404);
+    background-color: #fff;
+}
+.bottom .tip{
+    margin: 20rpx 0 0;
+    color: #999;
+    font-size: 26rpx;
+    text-align: center;
+}

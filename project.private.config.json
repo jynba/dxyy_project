@@ -3,7 +3,7 @@
     "projectname": "GO",
     "setting": {
         "compileHotReLoad": true,
-        "urlCheck": false,
+        "urlCheck": true,
         "bigPackageSizeSupport": true
     },
     "condition": {
@@ -41,6 +41,41 @@
                     "name": "",
                     "pathName": "pages/room/room",
                     "query": "id=9999999999",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/ranking/ranking",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/myjoinDetail/myjoinDetail",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/specificSite/specificSite",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/myjoinDetail/myjoinDetail",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/moments/moments",
+                    "query": "",
                     "launchMode": "default",
                     "scene": null
                 }

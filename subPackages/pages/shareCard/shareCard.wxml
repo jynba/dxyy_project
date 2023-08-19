@@ -1,0 +1,17 @@
+<share-box isCanDraw="{{isCanDraw}}" userInfo="{{userInfo}}" bind:initData="handleClose" />
+<view wx:if="{{sharePath}}">
+    <image src="{{sharePath}}" style="width:630rpx;height: 1110rpx;margin: 60rpx 60rpx;border-radius: 20rpx;"></image>
+</view>
+<view class="shareOther">
+    <text class="iconfont icon-xiazai1" style="color: #009FE8;font-size: 75rpx;" bindtap='saveImg'></text>
+    <button class='openSetting' open-type="openSetting" bindopensetting='handleSetting' hidden='{{openSettingBtnHidden}}' style="border-radius: 40%;width: 75rpx;height: 75rpx;position: absolute;left: 56rpx;top: 1236rpx;opacity: 0;">1</button>
+    <text class="iconfont icon-pengyouquan" style="color: #50B674;font-size: 75rpx;"></text>
+    <text class="iconfont icon-kongjian" style="color: #F5BC32;font-size: 75rpx;"></text>
+    <text class="iconfont icon-weixin" style="color: #50B674;font-size: 75rpx;"></text>
+    <text class="iconfont icon-weibo" style="color: #EA5D5C;font-size: 75rpx;"></text>
+    <text class="iconfont icon-QQ" style="color: #30A5DD;font-size: 75rpx;"></text>
+
+</view>
+<view class="share">
+    <van-button size="large" color="#689bda" round icon="guide-o" bindtap="goToShare">分享到社区</van-button>
+</view>

@@ -13,6 +13,7 @@ Page({
         wx.setStorageSync('username', this.data.username)
     },
     bindchooseavatar(e) {
+        let that = this;
         const { avatarUrl } = e.detail
         const filePath = avatarUrl;
         let suffix = /\.\w+$/.exec(filePath)[0];
@@ -23,14 +24,13 @@ Page({
             success: res => {
                 // 返回文件 ID
                 wx.setStorageSync('avatarUrl', res.fileID)
+                that.setData({
+                    avatarUrl: res.fileID
+                })  
             },
             fail: console.error
         })
-
-        this.setData({
-            avatarUrl: res.fileID
-        })
-        wx.setStorageSync('avatarUrl', this.data.avatarUrl)
+        wx.setStorageSync('localUrl',filePath)
     },
     // 
     onLoad() {
@@ -41,16 +41,24 @@ Page({
                 username,
             })
         }
-        if (avatarUrl)
+        if (avatarUrl){
             this.setData({
                 avatarUrl
-            })
+            })            
+        }else{
+            wx.setStorageSync('avatarUrl', this.data.avatarUrl);
+        }
+
     },
     myLaunch() {
-
+        wx.navigateTo({
+          url: '/subPackages/pages/mycreate/mycreate',
+        })
     },
     myJoin() {
-
+        wx.navigateTo({
+          url: '/subPackages/pages/myjoin/myjoin',
+        })
     }
 
 })

@@ -1,0 +1,44 @@
+page {
+    background-color: rgba(153, 153, 153, 0.212);
+}
+.news{
+    position: relative;
+    width: 690rpx;
+    height: 500rpx;
+    margin: 30rpx auto;
+    background-color: #fff;
+    border-radius: 20rpx;
+}
+
+.image {
+    width: 100%;
+    height: 67%;
+    border-radius: 20rpx 20rpx 0 0;
+}
+.bottom{
+    position: absolute;
+    bottom: 20rpx;
+}
+.timeIcon {
+    margin: 0 20rpx;
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+
+.newsTime {
+    font-size: 25rpx;
+    color: #666;
+}
+
+.text {
+    margin: 5rpx 20rpx;
+    font-weight: 700;
+    font-size: 30rpx;
+}
+.noMore{
+    padding-bottom: 20rpx;
+    color: #333;
+    text-align: center;
+    font-size: 25rpx;
+}

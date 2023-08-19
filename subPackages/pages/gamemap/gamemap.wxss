@@ -1,0 +1,193 @@
+page{
+    background: linear-gradient(180deg, #fbfbfc 0%, #eef4fc 100%);
+}
+#wrap {
+    width: 100vw;
+    height: calc(100vh - 1px);
+}
+
+#wrap #content {
+    padding: 20rpx 25rpx 0;
+    /* padding-top: 80rpx; */
+} 
+
+
+
+/* map */
+.maptype {
+    width: calc(100vw - 50rpx);
+    height: calc(100vh - 250rpx);
+    /* min-height: calc(100vw - 130rpx); */
+    border-radius: 20rpx;
+    padding: 5rpx;
+    border: 5rpx solid #283544;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 40rpx;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    border-radius: 10rpx;
+    overflow: hidden;
+    position: relative;
+}
+
+.maptype>.content map {
+    width: 100%;
+    height: 100%;
+}
+
+.activity {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90rpx;
+    height: 450rpx;
+    right: 2%;
+    bottom: 6%;
+}
+
+.randPos {
+    position: absolute;
+    left: -2rpx;
+    height: 65rpx;
+    width: 65rpx;
+}
+
+.choosePos {
+    height: 50rpx;
+    width: 50rpx;
+    display: flex;
+    border-radius: 50%;
+    z-index: 999;
+    background: none;
+}
+
+.controls {
+    width: 60rpx;
+    height: 40rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    text-align: center;
+    font-size: 24rpx;
+    line-height: 40rpx;
+    z-index: 999;
+}
+
+.aim {
+    height: 50rpx;
+    width: 50rpx;
+    position: absolute;
+    top: 6rpx;
+    left: 6rpx;
+}
+
+.switch {
+    height: 45rpx;
+    width: 45rpx;
+    position: absolute;
+    top: 8rpx;
+    left: 8rpx;
+}
+
+/* 游戏模式和地点提示 */
+.topTitle {
+    /* display: flex; */
+    position: relative;
+    /*给地点提示做定位用*/
+}
+.mode{
+    padding-left: 20rpx;
+    font-size: 40rpx;
+    color: #283544;
+    font-weight: 700;
+}
+
+/* 右上角的地点提示 */
+.checkdetail {
+    position: absolute;
+    top: 10rpx;
+    right: 140rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130rpx;
+    font-size: 28rpx;
+}
+
+/* 排行榜 */
+.ranking {
+    position: absolute;
+    top: 10rpx;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130rpx;
+    font-size: 28rpx;
+}
+.checkdetail image,
+.ranking image {
+    width: 60rpx;
+    height: 60rpx;
+}
+.checkdetail text,
+.ranking text{
+    padding-top: 10rpx;
+    color: #283544;
+}
+/* 公里数 时间 */
+.lenmessage {
+    width: 380rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    font-size: 26rpx;
+    margin: 10rpx;
+    padding: 16rpx;
+}
+
+
+/* 弹出框 */
+.middlecontent {
+    margin-top: 20rpx;
+}
+
+.pointTip {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10rpx;
+}
+
+.pointTip .dot {
+    margin: 0 40rpx;
+    font-size: 40rpx;
+}
+
+.pointTip .box {
+    max-width: 400rpx;
+}
+
+.pointTip image {
+    vertical-align: middle;
+}
+
+.pointTip .showpic {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.pointTip .finish {
+    position: absolute;
+    right: 50rpx;
+    margin-left: 30rpx;
+    width: 50rpx;
+    height: 50rpx;
+}

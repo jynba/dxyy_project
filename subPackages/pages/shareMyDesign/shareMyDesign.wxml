@@ -1,0 +1,20 @@
+<view class="up">
+    <image src="{{setImage}}" mode="aspectFit" class="mainImg"></image>
+    <view class="mask" bindtap="setImage" wx:if="{{setImage=='/images/banner.png'}}"></view>
+    <view class="float" wx:if="{{setImage=='/images/banner.png'}}">
+        <image src="/images/camera.png" class="camera"/>
+        <view class="text">上传封面图</view>
+    </view>
+</view>
+<view class="designList">
+    <van-field model:value="{{ itemTitle }}" type="text" label="活动标题" maxlength="30" placeholder="想一个吸引人的标题吧！" required clearable />
+    <van-field model:value="{{ itemMsg }}"  type="textarea" label="活动特色" placeholder="说说您策划的活动有何特色" required clearable autosize/>
+    <van-field model:value="{{ itemCity }}" type="text" label="活动城市" maxlength="20" placeholder="xx省xx市" required clearable />
+    <view>
+        <van-cell title="活动模式" value="{{modeEditTip}}" label="每个点位图文并茂更佳" bindtap="goDiyMap"  is-link required  />
+        <!-- 提示信息 -->
+    </view>
+    <van-field model:value="{{ itemMore }}"  type="textarea" label="补充说明" clearable autosize/>
+</view>
+<van-button size="large" color="#689bda" round="true" bindtap="submit">提交</van-button>
+<van-toast id="van-toast" />

@@ -1,0 +1,41 @@
+<view class="form_lights">
+  <form bindsubmit="onSubmit" style="width: 100%;">
+    <!-- 图片 -->
+    <view class="images_box">
+      <!-- <swiper class="swiper" autoplay="true" indicator-dots="true" indicator-active-color="#2e74ee" circular="true" interval="5000" duration="1000">
+      <block wx:for="{{imglist}}" wx:for-index="index">
+        <swiper-item>
+          <view class="center">
+            <image src="{{item}}" class="slide-image" mode="aspectFit" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper> -->
+
+      <block wx:key="index" wx:for="{{imglist}}">
+        <view class='img-box'>
+          <image class='img-upload' data-index='{{index}}' src='{{item}}' bindtap="preViewimg"></image>
+          <view class='img-delete' data-deindex='{{index}}' bindtap='imgDelete1'>
+            <image class="img" src='../../images/delete_picture.png'></image>
+          </view>
+        </view>
+      </block>
+      <view class='addimg-box' bindtap='addpic' wx:if="{{imglist.length<9}}">
+        <image style="width: 50%;height: 50%;" src='../../images/add_b.png'></image>
+      </view>
+    </view>
+
+    <input class='title' placeholder='填写标题会有更多赞哦~(选填)'maxlength ="20" name='name'></input>
+    <view class="line"></view>
+    <view style="padding-top: 20rpx;  min-height: 200px;height: auto !important;width: 100%;text-align: start;padding-left: 50rpx;">
+      <textarea class="input_text" auto-focus="true" maxlength ="300"  auto-height="true" name="describe" style="width: 90%;"placeholder="记录你在定向越野过程中的运动点滴！" />
+    </view>
+    <view class="button_pos">
+      <button class="button_s" form-type="submit">
+        <!-- <view class="buttontext"> -->
+        <text class="text1">发布作品</text>
+        <!-- </view> -->
+      </button>
+    </view>
+  </form>
+</view>

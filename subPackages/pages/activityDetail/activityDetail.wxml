@@ -1,0 +1,144 @@
+<view class="activity" wx:if="{{eventIndex==0}}">
+    <view class="imgBox">
+        <image src="https://636c-cloud-4g0etb4u9d3975e2-1305558654.tcb.qcloud.la/covers/DongGuan.jpg?sign=5ca809d15f986c52d2dd12c230ed64dd&t=1680279334" mode="" class="topImg" />
+    </view>
+    <view class="info">
+        <view class="title">
+            走读红色东莞，重温革命史迹
+        </view>
+        <view class="location">活动地点：广东省东莞市</view>
+        <view class="beginTime">活动开始时间：2023-04-01</view>
+        <view class="overTime">活动结束时间：2023-12-30</view>
+    </view>
+    <view class="functional">
+        <view class="registration same" bindtap="onshowJoin">
+            <van-icon name="manager-o" color="#388AE2" size="50rpx"/>
+            <view class="text">报名信息</view>
+        </view>
+        <view class="sites same" bindtap="getMap">
+            <van-icon name="location-o" color="#388AE2" size="50rpx"/>
+            <view class="text">打卡点位</view>
+        </view>
+        <view class="ranking  same" bindtap="CheckRanking">
+            <van-icon name="medal-o" color="#388AE2" size="50rpx"/>
+            <view class="text">排行榜</view>
+        </view>
+        <view class="community  same" bindtap="goToShare">
+            <van-icon name="apps-o" color="#388AE2" size="50rpx"/>
+            <view class="text">打卡社区</view>
+        </view>
+    </view>
+    <van-button size="large" color="#689bda" round bindtap="toConfirmSetMode">{{isBaomin?'去打卡':'去报名'}}</van-button>
+</view>
+<view class="activity" wx:if="{{eventIndex==1}}">
+    <view class="imgBox">
+        <image src="https://636c-cloud-4g0etb4u9d3975e2-1305558654.tcb.qcloud.la/covers/ChaoZhou.jpg?sign=2a98c87e852c1bbbeb25485179ef3d0a&t=1680279383" mode="" class="topImg" />
+    </view>
+    <view class="info">
+        <view class="title">
+            打卡潮州八景，探寻千年故事
+        </view>
+        <view class="location">活动地点：广东省潮州市</view>
+        <view class="beginTime">活动开始时间：2023-03-25</view>
+        <view class="overTime">活动结束时间：2023-12-30</view>
+    </view>
+    <view class="functional">
+        <view class="registration same">
+            <van-icon name="manager-o" color="#388AE2" size="50rpx"/>
+            <view class="text">报名信息</view>
+        </view>
+        <view class="sites same" bindtap="getMap">
+            <van-icon name="location-o" color="#388AE2" size="50rpx"/>
+            <view class="text">打卡点位</view>
+        </view>
+        <view class="ranking  same" bindtap="CheckRanking">
+            <van-icon name="medal-o" color="#388AE2" size="50rpx"/>
+            <view class="text">排行榜</view>
+        </view>
+        <view class="community  same" bindtap="goToShare">
+            <van-icon name="apps-o" color="#388AE2" size="50rpx"/>
+            <view class="text">打卡社区</view>
+        </view>
+    </view>
+    <van-button size="large" color="#689bda" round bindtap="toConfirmSetMode">{{isBaomin?'去打卡':'去报名'}}</van-button>
+</view>
+<view class="activity" wx:if="{{eventIndex==2}}">
+    <view class="imgBox">
+        <image src="https://636c-cloud-4g0etb4u9d3975e2-1305558654.tcb.qcloud.la/covers/GuangZhou.png?sign=7d9ddef34252f463a5312851398b3618&t=1680279303" mode="" class="topImg" />
+    </view>
+    <view class="info">
+        <view class="title">
+            岭南文化探秘: 一场与广州地标建筑的邂逅之旅
+        </view>
+        <view class="location">活动地点：广东省广州市</view>
+        <view class="beginTime">活动开始时间：2023-03-18</view>
+        <view class="overTime">活动结束时间：2023-12-30</view>
+    </view>
+    <view class="functional">
+        <view class="registration same">
+            <van-icon name="manager-o" color="#388AE2" size="50rpx"/>
+            <view class="text">报名信息</view>
+        </view>
+        <view class="sites same" bindtap="getMap">
+            <van-icon name="location-o" color="#388AE2" size="50rpx"/>
+            <view class="text">打卡点位</view>
+        </view>
+        <view class="ranking  same" bindtap="CheckRanking">
+            <van-icon name="medal-o" color="#388AE2" size="50rpx"/>
+            <view class="text">排行榜</view>
+        </view>
+        <view class="community  same" bindtap="goToShare">
+            <van-icon name="apps-o" color="#388AE2" size="50rpx"/>
+            <view class="text">打卡社区</view>
+        </view>
+    </view>
+    <van-button size="large" color="#689bda" round bindtap="toConfirmSetMode">{{isBaomin?'去打卡':'去报名'}}</van-button>
+</view>
+<view class="activity" wx:if="{{eventIndex==3}}">
+    <view class="imgBox">
+        <image src="https://636c-cloud-4g0etb4u9d3975e2-1305558654.tcb.qcloud.la/covers/ShunDe.jpg?sign=515e0eecb570b4f043d1e9e42a975715&t=1680280740" mode="" class="topImg" />
+    </view>
+    <view class="info">
+        <view class="title">
+            打卡顺峰山公园，和绿色自然亲密接触
+        </view>
+        <view class="location">活动地点：广东省佛山市</view>
+        <view class="beginTime">活动开始时间：2023-03-15</view>
+        <view class="overTime">活动结束时间：2023-12-30</view>
+    </view>
+    <view class="functional">
+        <view class="registration same">
+            <van-icon name="manager-o" color="#388AE2" size="50rpx"/>
+            <view class="text">报名信息</view>
+        </view>
+        <view class="sites same" bindtap="getMap">
+            <van-icon name="location-o" color="#388AE2" size="50rpx"/>
+            <view class="text">打卡点位</view>
+        </view>
+        <view class="ranking  same" bindtap="CheckRanking">
+            <van-icon name="medal-o" color="#388AE2" size="50rpx"/>
+            <view class="text">排行榜</view>
+        </view>
+        <view class="community  same" bindtap="goToShare">
+            <van-icon name="apps-o" color="#388AE2" size="50rpx"/>
+            <view class="text">打卡社区</view>
+        </view>
+    </view>
+    <van-button size="large" color="#689bda" round bindtap="toConfirmSetMode">{{isBaomin?'去打卡':'去报名'}}</van-button>
+</view>
+<van-dialog id="van-dialog" /><van-dialog
+  use-slot
+  title="加入活动"
+  show="{{ showJoin }}"
+  show-cancel-button
+  confirm-button-color="#689bda"
+  bind:close="onCloseJoin"
+  bind:confirm="getUserName"
+>
+<van-field
+    value="{{userName}}"
+    placeholder="请输入昵称（必填）"
+    border="{{ false }}"
+    bind:change="oninputName"
+  />
+</van-dialog>

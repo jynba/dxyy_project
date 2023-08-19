@@ -1,0 +1,191 @@
+/* pages/CircleFriends/CircleFriends.wxss */
+page {
+    background: whitesmoke;
+}
+
+.page {
+    width: 100%;
+    /* overflow-x: hidden */
+}
+
+/* 列表 */
+.CircleList {
+    background: white;
+    margin-bottom: 1px;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+}
+
+.body-view {
+    display: flex;
+    background-color: white;
+    border-bottom: 0.5rpx solid rgba(228, 228, 228, 0.651);
+}
+
+.left-view {
+    width: 150rpx;
+    border-radius: 10rpx;
+    /* background: rebeccapurple; */
+}
+
+.left-view image {
+    border-radius: 10rpx;
+}
+
+.right-view {
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    margin: 10rpx;
+}
+
+/* 头像 */
+.user-icon {
+    /* display: flex; */
+    width: 100rpx;
+    height: 100rpx;
+    margin-left: 20rpx;
+    margin-top: 30rpx;
+    margin-right: 20rpx;
+}
+
+/* 昵称 */
+.user-name {
+    display: flex;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 17px;
+    color: rgb(88, 103, 138);
+    margin-top: 30rpx;
+    margin-left: 10rpx;
+}
+
+/* 内容 */
+.user-content {
+    display: flex;
+    font-size: 15px;
+    line-height: 50rpx;
+    margin-left: 10rpx;
+
+}
+
+/* 图片 */
+.photo-view {
+    /* background: rebeccapurple; */
+    margin-left: 10rpx;
+    margin-bottom: 20rpx;
+}
+
+.photo {
+    /* background: rgb(255, 166, 0);   */
+    float: left;
+    margin-right: 10rpx;
+    margin-top: 10rpx;
+}
+
+/* 地理位置 */
+.user-address-view {
+    display: flex;
+    margin-top: 20rpx;
+    width: 100%;
+}
+
+.user-address-view label {
+    font-size: 12px;
+    margin: 10rpx;
+}
+
+/* 时间、删除、点赞评论 */
+
+.post_time{
+    font-size: 13px;
+    margin-left: 10rpx;
+}
+
+
+
+/* 点赞 */
+.zan-view {
+    width: 100%;
+    background: white;
+    margin-bottom: 20rpx;
+}
+
+.trigon-view {
+    /* height: 20rpx; */
+    margin-bottom: -15rpx;
+}
+
+.trigon {
+    display: flex;
+    width: 40rpx;
+    height: 20rpx;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+
+.zan-bg-view {
+    display: inline-block;
+    width: 97%;
+    background: rgb(235, 235, 235);
+    margin-right: 20rpx;
+    margin-bottom: -11rpx;
+    border-top-left-radius: 7rpx;
+    border-top-right-radius: 7rpx;
+}
+
+.zan-user-view {
+    display: flex;
+    float: left;
+    height: 40rpx;
+    margin-left: 10rpx;
+    /* margin-top: 5rpx; */
+    align-content: center;
+}
+
+.zan-user {
+    font-size: 12px;
+    line-height: 40rpx;
+    height: 40rpx;
+    color: rgb(88, 103, 138);
+}
+
+
+.like-view {
+    display: flex;
+}
+
+.like-user-view {
+    margin-left: 20rpx;
+}
+
+.bottom {
+    width: 500rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 评论 */
+/* .comment-view{
+    background: white;
+    width: 97%;
+  }
+  
+  .comment{
+    background: rgb(235, 235, 235);
+    line-height: 35rpx;
+  }
+  
+  .comment label{
+    font-size: 12px;
+  }
+  
+  .comment-user{
+    color: rgb(88, 103, 138);
+    margin-left: 10rpx;
+  }
+  
+  .content{
+    margin-left: 10rpx;
+  }
+   */

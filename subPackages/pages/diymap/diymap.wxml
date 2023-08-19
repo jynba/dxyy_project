@@ -1,0 +1,97 @@
+<scroll-view id="wrap" scroll-y="true">
+
+    <view id="content">
+        <van-tabs active="{{active}}" type="card" bind:change="onChange" class="mode">
+            <!-- search start -->
+            <view wx:if="{{showSearch}}" class="search" bindtap="clickMask">
+                <view class="ipt">
+                    <input type="text" value="{{iptValue}}" bindfocus="iptFocus" bindinput="iptInput" focus="{{focus}}" maxlength="50" />
+                    <view class="delect" catchtap="delectValue">
+                        <view class="img">
+                            <image src="/images/right.png"></image>
+                        </view>
+                    </view>
+                </view>
+                <view wx:if="{{sugFlag}}" class="mask" data-type="mask">
+                </view>
+                <scroll-view wx:if="{{sugFlag}}" class="suggestion" scroll-y="true" scroll-top="{{scrollT}}">
+                    <view class="content">
+                        <view class="item" wx:for="{{suggestion}}" wx:key="key" data-index="{{index}}" catchtap="selectSite">
+                            <text class="title">{{item.title}}</text>
+                            <!-- <text class="dis">{{item.distance}}</text> -->
+                        </view>
+                        <view class="more" catchtap="moreSuggestion">{{count>pageIndex*10?'加载更多':count==0?'无匹配内容':count==null?'加载中':'到底了'}}</view>
+                    </view>
+                </scroll-view>
+            </view>
+
+            <!-- 设置随机点信息 样式还没设置 -->
+                <view wx:if="{{setRandom}}" style="margin-top: 20rpx;">
+                    <van-field model:value="{{ randomRange }}" label="随机点范围：" placeholder="请设置随机点范围(默认260m)" type="number" clearable border="{{ true }}" />
+                    <van-field model:value="{{ randomNum }}" label="随机点个数：" placeholder="请设置随机点个数(默认5个)" type="number"></van-field>
+                </view>
+
+            <!-- map start -->
+            <view class="maptype">
+                <view class="content">
+                    <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" setting="{{setting}}" bindtap="bindtap" scale="17" bindmarkertap="onPointTap" bindlabeltap="onPointTap"></map>
+                    <view class="activity">
+                        <van-tab title="随机点模式">
+                            <view class="icon" style="position: absolute;right:0;top: 118rpx; width: 60rpx;height: 60rpx;background-color: #fff;border-radius: 20rpx;">
+                                <image src="/images/refresh.png" class="randPos" bindtap="getMaxMinLongitudeLatitude"></image>
+                            </view>
+
+                        </van-tab>
+                        <van-tab title="自定义模式">
+                            <view class="icon" style="position: absolute;right:0; width: 60rpx;height: 60rpx;background-color: #fff;border-radius: 20rpx;">
+                                <image src="/images/menu.png" class="choosePos" bindtap="ChoosePos"></image>
+                            </view>
+
+                            <van-dialog use-slot title="是否删除该坐标点" show="{{showModal }}" show-cancel-button confirm-button-color="#689bda" bind:close="onClose" bind:confirm="IsDelete" bind:cancel="NotDelete">
+                                <van-field model:value="{{ Postitle }}" placeholder="名称" required />
+                                <van-field model:value="{{ Posmessage }}" placeholder="描述信息" />
+                                <van-uploader style="display: flex; justify-content: center;" file-list="{{ fileList }}" deletable="{{ true }}" use-before-read bind:before-read="beforeRead" bind:after-read="afterRead" bind:delete="deleteImg" />
+                            </van-dialog>
+                            <van-dialog use-slot title="坐标点描述信息" show="{{  setModal }}" show-cancel-button confirm-button-color="#689bda" bind:close="onClose" bind:confirm="onConfirm" bind:cancel="onCancel" before-close="{{beforeClose}}">
+                                <van-field model:value="{{ Postitle }}" placeholder="名称" required />
+                                <van-field model:value="{{ Posmessage }}" placeholder="描述信息" />
+                                <van-uploader style="display: flex; justify-content: center;" file-list="{{ fileList }}" deletable="{{ true }}" use-before-read bind:before-read="beforeRead" bind:after-read="afterRead" bind:delete="deleteImg" />
+                            </van-dialog>
+                        </van-tab>
+                        <van-tab title="猜地点模式">
+
+                            <view class="icon" style="position: absolute;right:0;top: 118rpx; width: 60rpx;height: 60rpx;background-color: #fff;border-radius: 20rpx;">
+                                <image src="/images/menu.png" class="choosePos" bindtap="ChoosePos"></image>
+                            </view>
+
+                            <van-dialog use-slot title="是否删除该坐标点" show="{{showModal }}" show-cancel-button bind:close="onClose" confirm-button-color="#689bda" bind:confirm="IsDelete" bind:cancel="NotDelete">
+                                <van-field model:value="{{ Postitle }}" placeholder="名称(不显示在游戏中)" required />
+                                <van-field model:value="{{ Posmessage }}" placeholder="提示信息(显示在游戏中)" />
+                                <van-uploader style="display: flex; justify-content: center;" file-list="{{ fileList }}" deletable="{{ true }}" use-before-read bind:before-read="beforeRead" bind:after-read="afterRead" bind:delete="deleteImg" />
+                            </van-dialog>
+                            <van-dialog use-slot title="坐标点描述信息" show="{{  setModal }}" show-cancel-button bind:close="onClose" confirm-button-color="#689bda" bind:confirm="onConfirm" bind:cancel="onCancel" before-close="{{beforeClose}}">
+                                <van-field model:value="{{ Postitle }}" placeholder="名称(不显示在游戏中)" required />
+                                <van-field model:value="{{ Posmessage }}" placeholder="提示信息(显示在游戏中)" required />
+                                <van-uploader style="display: flex; justify-content: center;" file-list="{{ fileList }}" deletable="{{ true }}" use-before-read bind:before-read="beforeRead" bind:after-read="afterRead" bind:delete="deleteImg" />
+                            </van-dialog>
+                        </van-tab>
+                        <view catchtap="satelliteChange" class="controls" style="background-color:{{satellitecolor}}">
+                            <view class="icon" style="position: absolute;right:0;top: 210rpx; width: 60rpx;height: 60rpx;background-color: #fff;border-radius: 20rpx;">
+                                <image src="/images/switch.png" class="switch"></image>
+                            </view>
+                        </view>
+                        <view class="icon" style="position: absolute;right:0;top: 300rpx; width: 60rpx;height: 60rpx;background-color: #fff;border-radius: 20rpx;">
+                            <image class="aim" catchtap="showCurPos" src="/images/aim.png"></image>
+                        </view>
+
+                        <!-- <view catchtap="ShowPolyline" class="controls" style="background-color:{{polylinecolor}}">
+                            <view>轨迹</view>
+                        </view> -->
+                    </view>
+                </view>
+            </view>
+            <van-button size="large" color="#689bda" bindtap="toConfirmSetMode">确认设置为以上模式</van-button>
+            <van-toast id="van-toast" />
+        </van-tabs>
+    </view>
+</scroll-view>

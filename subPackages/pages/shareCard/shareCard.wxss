@@ -1,0 +1,19 @@
+.intro {
+    width: 686rpx;
+    height: 88rpx;
+    background: #00cc88;
+    color: #FFF;
+    border-radius: 16rpx;
+    font-size: 32rpx;
+    text-align: center;
+    margin: 200rpx auto;
+  }
+
+.share{
+    margin-top: 20rpx;
+}
+.shareOther{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 20rpx;
+}

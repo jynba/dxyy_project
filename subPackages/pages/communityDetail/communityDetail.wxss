@@ -1,0 +1,109 @@
+
+.swiper {
+    height: 700rpx;
+    width: 100%;
+  }
+  .slide-image{
+    height: 600rpx;
+    width: 100%;
+    border-radius: 20rpx;
+  }
+  .center {
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .title{
+    position: relative;
+    padding-top: 30rpx;
+    text-align: center;
+    font-size: 16px;
+  }
+  .content{
+    justify-content: center;
+    text-indent:2em;
+    font-size: 14px;
+    color: #616466;
+    margin: 0 28rpx;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: #FFF;
+    line-height: 1.5;
+  }
+  
+  
+  
+  .user_content{
+    padding-top: 20rpx;
+    flex-direction: row;
+    display: flex;
+    white-space: nowrap;/*合并空白*/
+    justify-content: space-between;
+  }
+  .user{
+    position: relative;
+    left: 25rpx;
+  }
+  .user1_ava{
+    margin-right: 5rpx;
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 100%;
+  }
+  .user_Name{
+    margin-right: 40rpx;
+    margin-left: 10rpx;
+    line-height: 50rpx;
+    font-size: 30rpx;
+    color: #666;
+  }
+  .delete{
+    position: relative;
+    right: 30rpx;
+    width: 55rpx;
+  }
+  .delete_text{
+    font-size: 20rpx;
+    color: rgb(124, 124, 124);
+    display: inline;
+  }
+  .sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .time{
+    position: relative;
+    left: 30rpx;
+    top:2rpx;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25rpx;
+    color: rgb(158, 155, 155);
+  }
+  .like{
+    position: relative;
+    top:2rpx;
+    right: 30rpx;
+    display: flex;
+    flex-direction: row;
+  }
+  .like_icon{
+    width: 38rpx;
+    height: 33rpx;
+    display: inline;
+  }
+  .like_icon image{
+    width: 100%;
+    height: 100%;
+  }
+  .like_nums{
+    margin-right: 10rpx;
+    margin-left: 10rpx;
+    display: inline;
+    font-size: 33rpx;
+    color: #666;
+  }

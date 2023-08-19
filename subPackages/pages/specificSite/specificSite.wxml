@@ -1,0 +1,735 @@
+<!-- 打卡潮州八景，探寻千年故事 -->
+<view wx:if="{{getId=='10'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/d50735fae6cd7b899758d7b30c2442a7d9330ecd?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">湘桥春涨</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省潮州市湘桥区环城东路与水平路交叉口北120米
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                湘子桥即广济桥，在潮州城东门外，横卧在滚滚的韩江之上，东临笔架山，西接东门闹市，南眺凤凰洲，北仰金城山，景色壮丽迷人。民谣唱曰：“到广不到潮，枉费走一遭；到潮不到桥，白白走一场”。广济桥始建于宋乾道七年（1171），始为浮梁，称“康济桥”。此后，历二百余年的更迭，到明正德八年（1513），才形成“十八梭船廿四洲”的独特风格。潮州民谣：“潮州湘桥好风流，十八梭船廿四洲，廿四楼台廿四样，二只鉎牛一只溜”，唱的就是湘子桥的历史风貌。“湘桥春涨”是“潮州八景”之一：时当暮春三月，韩江水涨，河面增阔，湘子桥东西段中间十八梭船连成一线，真似长龙卧波。观上游两岸的滴翠竹林，下游仙洲盛开的桃花和沿江的绿柳都象浮在水面，景色宜人，一似三湘，有诗赞道：
+            </view>
+            <text>湘桥春涨水迢迢，十八梭船锁画桥。
+                激石雪飞梁上鹭，惊涛声彻海门潮。
+                鸦洲涨起翻桃浪，鳄渚烟深濯柳条。
+                一带长虹三月好，浮槎几拟到层霄。
+            </text>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='11'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/a1ec08fa513d26970e38e56d56fbb2fb4316d813?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">韩祠橡木</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省潮州市湘桥区环城东路与水平路交叉口北120米
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                跨过广济桥，迎面便是蜿蜒起伏的笔架山，山上岩石层叠，苍松翠柏，浓荫蔽日，沿中峰石阶直上山腰，庄严静肃的韩文公祠便耸立在眼前，这里便是“韩祠橡木”的胜地。
+                笔架山原名双旌山，因形似笔架遂称笔架山。韩文公祠位于笔架山中峰的双旌石下。相传韩愈贬任潮州刺史时，常登此山，筑亭游览，并亲手植下橡树。后人敬仰韩公，将笔架山称为“韩山”，将亭称为“侍郎亭”。宋淳熙十六年（1189年）知军州事丁允元认为韩公尝游于此并手植橡木，韩公之祠应迁建于此，所以将城南七里的韩文公祠迁至今址。
+                韩文公祠的建筑简朴雅致，墙壁全是水磨砖砌成，祠内分前后二进，并带两廊，后进升高七尺，有石阶可登，正中供韩愈塑像。祠内石柱多刻对联，四壁环立历代碑刻四十面，详载韩愈贬潮史迹和该祠兴废情况。
+                相传当年韩愈所植的橡木，就在祠前，据宋礼部尚书王大宝《韩木赞》的描写，橡树形如华盖，遮蔽屋檐，其外皮作鱼鳞状，叶细而长，叶脉凸起，作棱角状，春夏之交开花，红白相间，甚是美丽。但花不常开，潮州人崇尚韩愈，以至效祥于他手植的这棵橡木。“以花之繁稀卜科名盛衰”，甚至《潮州府志》有“乾隆九年祠堂橡木花，科名大盛”的记载。于是，祠吊先哲，木卜科名，“韩祠橡木”便成了潮州八景之一。邑人郑兰枝有诗云：
+            </view>
+            <text>高植一株耸翠峦，侍郎手泽倚栏干。
+                根深八月蟠祠古，叶毓双旌度岁寒。
+                棱影参差侵曲水，奇花多少映祠坛。
+                游人若问科名事，为指芳林旧姓韩。
+            </text>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='12'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/a8014c086e061d954ff4da0878f40ad162d9ca54?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">金山古松</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省潮州市湘桥区环城东路与水平路交叉口北120米
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                金山屹立于城北韩江之滨，高约金黄四十余米，状如覆釜，为潮州古城后枕，与西面的葫芦山，东面的笔架山形成潮城的三面屏障。
+                金山古松，原名马丘松翠。因宋末摧锋寨正将马发，率领潮州人民奋起抗击元兵侵潮，后元将收买南门巡检黄虎子为内应，攻陷潮州城，马发“收残率百余人入保子城（即金山）。度不可为，令妻子自缢死，发自鸩”，满门殉节，全城人民在元兵屠城过程中几遭杀尽。后人为纪念马发和潮州人民抗元，在金山上修筑马发墓，并植苍松翠柏，以喻高风亮节。郑兰枝有诗赞道：
+            </view>
+            <text>金山北枕起高峰，万古凝荫一棵松。
+                矗矗凌云悬百尺，青青耐雪度三冬。
+                风亭积翠飞层堞，虎石吹涛逐晚钟。
+                长峙海邦标劲节，满林秋色入望浓。
+            </text>
+            <view class="p" style="margin-top: 30rpx;">
+                唐代的刺史公堂和宋代的州衙均设于金山麓。宋大中祥符年间（1008-1016年）潮州知军州事王汉见其“山之形胜万态”。于是斩荆棘，兴土木，开路径，建荔枝亭、凤凰亭、初阳亭、西晖亭，辟独秀峰、初阳顶、望贤石，显石岗诸景。历代又不断修葺并于岩石之上摩刻诗词记事，使金山成为游览胜地。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='13'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/f3d3572c11dfa9ec3fef08156bd0f703908fc1eb?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">凤凰时雨</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省潮州市湘桥区仙洲岛北端
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                凤凰台位于潮州城南郊的老鸦洲（后称沙洲岛或凤凰洲）北端，明隆庆二年（1568）潮州知府候必登倡建。凤凰台是凤凰洲公园的主体建筑，该台因立于洲头，历史上屡遭洪水猛浪之厄，这次重建前所存残迹为民国初年所修，台上是一座四柱、单檐歇山顶水泥结构的亭台，与原貌相差甚远。
+                现重建的凤凰台由台体和阁亭两部分组成，坐南朝北，高达四丈多。台体中首层石座为高台，高达丈八。二层为明台，高约丈八，亭阁高达丈七，由8根檐柱及12支门柱支撑，屋面是一个三开间，中间高，两侧低，成三山式的造型。由屋面高低不同的两个层次，产生出前后六面檐口，两侧二面檐口，勾勒出八面檐花。高低错落，檐牙高筑，峻凌飘逸，堂皇壮观，再现了凤凰台的本来面目和迷人的风采。亭阁上的“凤台时雨”、“中流砥柱”等牌匾与木质结构、明式拱斗和屋面的传统青瓦相映衬，统一和谐，文气斐然。若从远处欣赏，则有如古人所说的“烟云开罨画，灯火见楼台”，美不胜收。
+                凤凰台以借景著称，潮州八景之一的“凤凰时雨”，指的就是这里夏季乍雨乍晴、神幻莫测的时雨美景。在那乍雨乍晴的时节，江上奇景，千变万化，有时薄雨疏疏，江面轻烟淡淡，帆影穿梭；远望湘子桥，烟雨蒙蒙，车水马龙，宛如海市蜃楼；仰视笔架山，轻云渺渺，山上楼阁笼罩在薄纱之中。晴天烈日，时雨骤降，好似万斛银珠从天抛洒，阳光辉映雨点，又如千幅珠帘凭空摇荡，令人流连忘返，心旷神怡，疑入仙境。清乾隆进士郑兰枝的诗，把这个景点描述得淋漓尽致：
+            </view>
+            <text>凤城郊外耸层台，时雨霏霏渡水来。
+                云锁湘桥疑海市，烟迷笔岭忆蓬莱。
+                一天银竹侵朱槛，八面檐花点碧苔。
+                雯后山川多景色，老鸦洲上好徘徊。
+            </text>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='14'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/63d9f2d3572c11dfe47f5213602762d0f703c250?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">龙湫宝塔</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省潮州市湘桥区宝塔路与北溪路交叉口西南160米
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                原指潮州城北面韩江河面的小沙洲上，建于宋代的石塔。塔下有葱郁繁茂的树林，有雅致幽静的寺院，与车周的景物相辉映，构成一幅美妙绮丽的风景。初时名为“塔院维舟”，以游艇常喜系缆于此命名。又因塔边有“龙湫泉”，因之又名“龙湫宝塔”。从前观赏此景，可见古塔屹立江中，与意溪遥遥相对，江水环绕小洲。若登塔眺望前方，可见湘桥如长虹横贯江上，后面是高接云空的凤凰山，右边是炊烟袅袅的闹市，左边是一片广阔的绿野乡村。走进寺院，则见寺僧焚香礼佛，敲钟弄鼓，别有一番风味。夜间则游艇如梭，通宵不息。每当月夜，游人或系艇塔边，饮茶抒怀；或仰卧舟中，默数那满天星斗，聆听潺潺流水或掀帘观赏江上悠悠飘去的浪花，实在悠闲自得，其乐无穷。正如郑兰枝所描写的：
+            </view>
+            <text>古塔峥嵘鳄水头，潆洄院落好维舟。
+                帆藏灯影三更月，缆系钟声五夜游。
+                停棹不妨风瑟瑟，开窗正爱浪悠悠。
+                几层磴道遥望处，一幅江城入画秋。
+            </text>
+            <view class="p" style="margin-top: 30rpx;">
+                可惜宝塔于清代已经倒塌，寺院也荒芜，残存的塔基后来也被洪水冲去，小洲则因整治韩洒而被炸掉，仅存水下残基。“凤凰塔”是万历年间（1581-1585）知府郭子章所建，塔遥对凤凰山，又与隔江的凤凰台相对而得名。塔右有北溪，旱时溪水常涸，叫“涸溪”，凤凰塔因之也名“涸溪塔”。塔高十三丈七尺，基围十四丈四尺，七层八面，砖石结构。塔建于潮州韩江东南侧，正当两股江水要冲，有如一道堤防，护住塔后一带村落。夕阳残照或旭日东升，水流影动，金光闪灼，甚是奇妙；每当秋高气爽，江面平静，碧波如镜，水影倒映，古塔似巨柱擎天，蔚为壮观。沿塔内扶梯登上塔顶，眺望四方美景，三山一水护古城的天然风貌，一览无遗。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='15'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/b17eca8065380cd71fb94fdda244ad345982815f?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">鳄渡秋风</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省潮州市湘桥区意溪镇意堤路
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                在潮州城外韩江北堤中段，有个古渡口，叫鳄渡。古时候潮州鳄鱼为患，故韩江原称之为鳄溪（恶溪）。相传唐宪宗元和十四年（819年）刑部侍郎韩愈刺潮，因闻鳄鱼为患，危害人民的性命财产，遂于是年四月二十四日在上述渡口设置祭坛，“以猪一羊一投恶溪之潭水而祝之”，潮人因此称该渡口为鳄渡。这里是韩江上游最宽阔的江面。每年秋天，这里的景色最为迷人：蓝色的晴空映衬着片片白云，秋风吹皱了平静的江水，堤上魁梧笔直的木棉树沙沙作响，断断续续落下的几片黄叶，缓缓飘在辽阔的江面上。鼓满白帆的船儿徐徐飘荡，任意东西，显得格外舒畅，自由自在。有诗赞道：
+            </view>
+            <text>轻舟渺渺逐清风，载向西来复向东。
+                人立晴波秋水绿，叶飞远浦晚霞红。
+                一溪爽籁韩潮阔，两岸凉飚鳄渡空。
+                自是祭文神妙处，于今歌咏在江中。
+            </text>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='16'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/314e251f95cad1c8793311177c3e6709c93d5172?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">西湖鱼筏</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省潮州市湘桥区北园路与环城西路交叉口西200米
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                西湖鱼筏是秀丽壮观的西湖景色中最富有诗意和惹人欲醉的绝妙景致，因鱼筏出没于潋滟空蒙，变幻无穷的湖光水色之中而得名。
+                每当夏初，湖水浸溢湖边石堆，青葱的树木，别致的亭阁，倒映在波平如镜的湖水中，岸畔柳条随风摇曳，远处莲池散发着阵阵清香。十几只渔筏，浮泛湖中，抛网捕鱼，过后则泊聚湖边，渔人在筏上曝网晒衣，饮酒谈笑，充满一片平静欢乐的景象。
+                秋日里的西湖景色更迷人，水清可鉴，游鱼如梭，渔筏飘荡湖心，忽聚忽散，山树横映水底，影动波摇，若遇小雨疏烟，湖面一片空蒙。几对渔筏若隐若现，抛网收网，俨似一幅天然彩画。当这秋色方浓的时刻，藏身于湖边柳荫或钓台之上，观鱼垂钓，更是饶有风趣，邑人郑兰枝触景生情赋诗云：
+            </view>
+            <text>芳塘如鉴正清兮，渔筏随风看不迷。
+                几朵芦花浮水净，半竿山日落湖低。
+                鹭飞矶上霜千点，鱼织波心绢一溪。
+                自有钓台堪寄兴，载将秋色过城西。
+            </text>
+            <view class="p" style="margin-top: 30rpx;">
+                西湖浚于唐代，原为放生池，宋代重浚，辟为游湖。湖上有横贯东西的虹桥，有别具一格的湖心亭、湖清亭、渔庄，充分体现了南方园林建筑那小巧玲珑、典雅古朴的特点。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='17'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/838ba61ea8d3fd1f96164e0a334e251f95ca5fe7?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">北阁佛灯</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省潮州市湘桥区环城东路
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                北阁原是金山东面山下的一组楼阁的总称。这里东临急水直下的韩江流水，登临北阁，北堤上的“鳄渡秋风”，隔江相望的“韩祠橡木”，韩江下游的“湘桥春涨”，“凤凰时雨”诸多胜景历历在目；俯览韩江，江流滔滔，白帆点点。相传阁前佛灯，夜间金光四射，江面上从韩江上游十五里的鹿湖，下游至急水塔，陆路东从饶平的南武栋，南至潮州市浮洋，均可望见灯光，为韩江夜航的标志。
+                北阁景区，辟建于宋，形成于明，历代均有兴废，解放前夕已尽遭毁塌。新的建设时期，通政人和，百废俱兴，这一湮没已久的胜景又得到重建。整个景区依山傍水，自下而起，高低错落，雄伟壮观。新建的玄天阁，黄瓦红墙，重檐翘角。九十八高龄的著名书法家秦鄂生为玄天阁题匾并重书对联：“一江壁立擎天柱，百道泉飞络地维”。阁内重塑真武帝的艺术造像。阁旁耸立石佛灯一座。阁下山坡是韩江楼，为双层建筑，上作观赏之用，下供关羽、关平、周仓塑像。香港中文大学教授饶宗熙先生为楼题匾，重书对联：“忠贞亘万古而有光，何用别求白日；义勇垂两间于不泯，即此便是青天”。韩江楼的南面辟建迥澜亭，亭刻对联为：“折地河声奔足低，脱天峰影落城头。”再现了郑兰枝当年咏叹的景象：
+            </view>
+            <text>城北烟林阁几层，琉璃座上看燃灯。
+                一痕隐射青天静，半点长随白日凝。
+                影什晨星悬古刹，光分夜月挂岗陵。
+                梵宫自是长明镜，照彻韩潮万象澄。
+            </text>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<!-- 走读红色东莞 -->
+<view wx:if="{{getId=='00'}}">
+    <view class="imgBox">
+        <image src="https://p1.ssl.qhimg.com/t01b8bd5fa219b64b19.jpg" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">海战博物馆</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                东莞市虎门镇威远炮台旁边
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                馆以鸦片战争古战场——全国重点文物保护单位虎门炮台旧址为依托，利用文物史料，向人们展示当年中国人民抗击英国侵略者史实。占地面积20.4万平方米，建筑面积约1万平方米，由陈列大楼、宣誓广场、观海长提等组成纪念群体。
+                基本陈列有《鸦片战争海战陈列》和《虎门海战》半景画。《鸦片战争海战陈列》形象地表现了鸦片战争时期中英军事力量的对比及中国军队英勇抗击从海中入侵的英国侵略者史实，热情歌颂了中国军民在反侵略斗争中表现出来的崇高民族气节和强烈的爱国主义精神。《虎门海战》半景画，以写实的绘画与逼真的地面塑形，与现代声．光巧妙结合，生动地再现1841年2月26日虎门海战的悲壮场面。海战博物馆是虎门炮台爱国主义教育基地的重要组成部分，也是全国三大禁毒教育基地之一。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='01'}}">
+    <view class="imgBox">
+        <image src="https://youimg1.c-ctrip.com/target/100e0y000000lma72515B.jpg" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">虎门炮台</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                东莞市虎门镇南面村虎门大桥(环岛路)
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                虎门炮台[1]旧址分布在珠江两岸的大角山武山和大虎山等地。
+                林则徐销烟后和水师提督关天培一道动员民众筹备防务，加固和新建11处炮台，设置大炮300多门。以沙角、大角炮台为第一重门户，威远、镇远、靖远、巩固、永安、横档前山月台为第二重门户，大虎炮台为第三重门户，组织3道防线。又在横档岛、武山之间的江西，设置木排2排，大铁链372丈，阻截敌舰，在鸦片战争中，屡挫英国侵略军的进犯。现今的虎门炮台旧址除少数位于番禺区外，大部分归鸦片战争博物馆管理，按地理位置的分布情况，分成相对集中的沙角炮台和威远炮台两组分别成立沙角炮台管理所和威远炮台管理所进行管理。炮台多为条石和灰、砂、黄泥砌筑，平面圆形或半月形分为露天台（即明台）和暗台两类。威远炮台至今仍然保存完整，为花岗岩石砌筑全长360、高45米，共有25个炮位，每个炮位高2.9、宽4.2、深6.6米。炮位旁设储藏室和官兵休息室等。节兵火坟位于沙角炮台北约100米。
+                1841年1月7日英军进攻沙角炮台时英勇战死的清军75位官兵葬于此，置道光二十二年（1842年）六月所立“节兵火坟”碑。
+                现虎门炮台上有“义勇之冢”，埋葬的就是当时抗击英军战死的部分士兵。虎门白草山西麓沙角炮台后方还有“节兵义坟”。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='02'}}">
+    <view class="imgBox">
+        <image src="https://pic.baike.soso.com/ugc/baikepic2/11122/20200620020834-327388368_jpeg_697_504_69457.jpg/0" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">林则徐纪念馆</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                东莞市虎门镇解放路113号
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                1839年 6月3～25日，清朝钦差大臣林则徐(1785～1850)把收缴英美鸦片贩子的200多万斤鸦片在广东虎门镇口海滩当众销毁。虎门销烟这一伟大壮举，充分表现了中国人民禁烟的决心和反抗外国侵略的坚强意志。虎门销烟这一壮举，有力地伸张了中华民族的浩然正气，充分表现了中国人民严禁鸦片的决心和反抗外来侵略的坚强意志，在中国近代史和世界禁毒史上写下了光辉的一页。为纪念虎门销烟，纪念林则徐这位民族英雄，1957年人民政府在销烟池旧址建立了林则徐公园，并设林则徐纪念馆。1972年，将林则徐公园和林则徐纪念馆改名为鸦片战争虎门人民抗英纪念馆。1985年，恢复虎门林则徐纪念馆。馆区面积近 4万平方米。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+
+<view wx:if="{{getId=='03'}}">
+    <view class="imgBox">
+        <image src="http://dx.dg.gov.cn/dx/jdskpd/202011/03e1f8a40dbe43e6aafc0a61f534bd1e/images/c87d55e64f8041199dc9de9a625850f5.png" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">太平手袋厂陈列馆</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省东莞市人民南路西北方向70米
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                创建于1978年7月的太平手袋厂，率先推开了东莞外向型经济的大门，带动了整个东莞乃至全国的工业发展，是东莞作为改革开放先行地的重要标志，在中国改革开放进程中具有里程碑意义。
+                太平手袋厂陈列馆是东莞市纪念全国第一家“三来一补”企业太平手袋厂的专题陈列馆，于2019年12月18日落成启用。陈列馆包含陈列馆和雕塑广场，占地6000平方米。主馆建筑以“电动缝纫机+旧厂房”为外观造型，馆内展览面积500平方米，共展出各类设备、资料数百件，并采用场景化、情景化和信息化手段，全景再现太平手袋厂当年的激情岁月。雕塑广场有“光辉岁月”、“考验”、“圆梦”三尊主题雕塑。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='04'}}">
+    <view class="imgBox">
+        <image src="https://tse1-mm.cn.bing.net/th/id/OIP-C.JOYUtUNfNBarK_jT61oXMAHaFC?pid=ImgDet&rs=1" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">蒋光鼐故居</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                东莞市虎门镇虎门南栅三蒋村新基二巷1号
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                1930年，蒋光鼐在祖园辟建一座西方别墅式楼房，基座特别，为拱形涵洞式垫托底层地面，通风防潮。花岗岩石砌台阶，石雕栏杆精致，前廊后室，内进一厅两厢，一式二层，红墙围护国林，内有荔枝、龙眼、黄皮、番荔枝、法国白玉兰等名果嘉木，园前有高台，一株芒果浓荫如伞，门楼石砌，疏瓦翘檐，石匾楷书：“荔荫园”，一副行书门联：“造庐谁道龙犹卧，题户应嗤鸟是凡。”园后山麓，有蒋光鼐先生父母墓，墓台上，坐北朝南矗立1座10米多高的“考妣碑”。左侧墓志铭是前清进士张其淦为蒋父而撰，右侧墓志铭是民国元老胡汉民先生为蒋母而书。离碑百步有六角亭1座，是蒋光鼐先生纪念其弟蒋光鲁而建，名曰“光鲁亭”，蒋光鲁原为十九路军属下一位团长，人称“骁将”，1929年十九路军在山东、河南一带与冯、阎联军作战中阵亡。“荔荫园”“考妣碑”“光鲁亭”同属蒋光鼐故居文物点。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='05'}}">
+    <view class="imgBox">
+        <image src="https://ts1.cn.mm.bing.net/th/id/R-C.34a96710c7faccc0ceacdad280c2696c?rik=7DttAUbsdAUYuA&riu=http%3a%2f%2fimg1.qunarzz.com%2ftravel%2fpoi%2f1501%2f6a%2f20c7d16dd3d4e3.jpg_r_1024x683x95_21ebdb0a.jpg&ehk=0JJjnG2%2bawypRP0fsyNSgDiRhOxGNNjSoZGQ0UD8ddk%3d&risl=&pid=ImgRaw&r=0" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">沙角炮台</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省东莞市虎门镇炮台路沙角炮台
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                沙角炮台建于清嘉庆五年（1801年），配有大小炮十三门，现存濒海台和刻有“沙角”字样的石牌坊各一座，大炮3门，还有“林公则徐纪念碑”、捕鱼台等。鸦片战争时期，沙角炮台与大角炮台是虎门海口的第一道防线，被誉为粤海第一重门户，在抗击外来侵略的战争中，写下了许多可歌可泣的英雄业绩和悲壮故事。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<!-- 顺峰山公园 -->
+<view wx:if="{{getId=='30'}}">
+    <view class="imgBox">
+        <image src="https://youimg1.c-ctrip.com/target/100q0y000000m75ec3B24.jpg" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">迎春亭</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省佛山市顺峰山公园内
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                迎春亭是中国传统典型的对称式结构的建筑，与大门外的五行桥、石桥坊、迎春亭后的观湖平台、以及广场左右两侧的桂海芳丛、雅正园等景观，共同构建起以广场中轴线为东西对称式的布局。迎春亭为长亭，东西横向百余米，由左右各两个方亭、中间一座长亭，以及长廊连接组合而成。漆红大柱，金色盖瓦，典雅而气派，长亭内两侧均有休息长椅，是游客休息的人气场所。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='31'}}">
+    <view class="imgBox">
+        <image src="https://i1.hdslb.com/bfs/archive/1abede8e7c6771bef1905a5e41028034259993e9.jpg" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">青云塔</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省佛山市顺峰山公园内
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                青云塔原名为神步塔，因建在神步山顶而得名。是省级文物保护单位。青云塔建于明万历三十年，即公元1602年，由当时知县倪尚忠主建。
+
+                　　青云塔为八角七层楼阁式砖塔，高45.4米。塔身外每层均有围栏通道可供凭阑远眺。第四层外洞门上方石匾“三元挺秀”四字为倪尚忠题字，塔基周围八方各镶嵌石雕托塔力士一名，寓意吉祥保太平。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='32'}}">
+    <view class="imgBox">
+        <image src="http://p9.itc.cn/q_70/images03/20201213/a539a7fb9161432199b36f629bf0a3a2.jpeg" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">汀芷园</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省佛山市顺峰山公园内
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                紧邻青云公园，在神步山东侧的汀芷园，建筑面积1663平方米。该园入口清幽曲径，门坊玲珑曲雅。园内一衣带水，引水于山，流水于湖，脉流贯通，点画以水为题。有亭台高就，见楼阁依澜。曲廊古榭，木柱梁檐，卷棚屋盖。素瓦轻蓑，绝尘清逸。“华舫欲出，亭筑石上，秀水连环，碧波荡漾”。湖光山色，自然一体。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='33'}}">
+    <view class="imgBox">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F66a969b7-f2c2-4a2b-b32e-bcc26b1b776d%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1682908449&t=f98f729bc892a3adb84c30308d425e70" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">湿地花海</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省佛山市顺峰山公园内
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                湿地花海是佛山重点花色主题绿化亮点项目。面积9万平方米，以花为主题，以水为中心，发散衍生各种景观节点，如水岸边栈道、观莲桥、生态广场、观荷台、湖心岛、亲水平台等，充分展现水文化和湿地公园的自然之美。
+
+                整个湿地花海植物种类达120余种，以“一树一花一景”为设计原则，项层特色开花乔木采用黄花铃木、宫粉紫荆、大腹木棉，打造一个以黄、粉浪漫色系为主色调的开花树阵。地被采用粉色、黄色、红色多种花色的紫花翠芦莉、水旱生美人蕉、千蕨菜、香彩雀、荷花、多花色睡莲、红花勒杜鹃、锦绣杜鹃、紫花马樱丹等不同花期、花色的观花植物点缀，再与层次丰富的微地形结合，整个花海营造出错落有致、季相分明、极具视觉震撼力的景观效果。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='34'}}">
+    <view class="imgBox">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fss2.meipian.me%2Fusers%2F9294353%2F7bc8287c02b29eb7dc7fa27719b84312.jpg%3Fmeipian-raw%2Fbucket%2Fivwen%2Fkey%2FdXNlcnMvOTI5NDM1My83YmM4Mjg3YzAyYjI5ZWI3ZGM3ZmEyNzcxOWI4NDMxMi5qcGc%3D%2Fsign%2F1dc9a10ccf2b765e9bbd1d04de29dcdd.jpg&refer=http%3A%2F%2Fss2.meipian.me&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1682908744&t=b63b50c173d855842b48545c40cf009f" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">观音堂</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省佛山市顺峰山公园内
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                观音堂背山临水，构筑雅致，占地1万平方米，建筑面积2310平方米，均为仿明清建筑。穿过门廊，迎面可见片片紫竹。相传观音菩萨所居的普陀山洛伽山潮洞前，也是这样的紫竹林，素有观音菩萨常于紫竹中讲经的说法。
+
+                四合回廊中的“二十四孝”石雕，生动传神，如“卧冰求鲤”、“哭竹生笋”等24个故事，是中华民族孝义的经典篇章，而“观音三十二应身”石雕，出自《普门品》，石雕同样生动地再现了观音菩萨随缘应化，普渡众生的形象。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='35'}}">
+    <view class="imgBox">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2Fc3b284f9-9602-4caa-92d1-c96f3f3fff65%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1682909003&t=cf4519a8fad21e04709e28e7bf39dbbb" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">伏波桥</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省佛山市顺峰山公园内
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                伏波桥，老顺德人习惯称之为“九眼桥”，顾名思义就是桥有九个桥洞。据传古伏波桥与西汉伏波将军路博德征南越有关，当时为竹木桥，自建成后，历朝历代曾多次修复与重建，明代时筑石礅、架石板，下筑八孔，才修成石桥。清代重修时又增建“新月楼”于桥上，等于又加多一孔，合成九眼，故民间俗称“九眼桥”。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='36'}}">
+    <view class="imgBox">
+        <image src="https://photo.tuchong.com/1339488/f/549060964.jpg" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">野生雀鸟岛</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省佛山市顺峰山公园内
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                野生雀鸟岛是各种雀岛们的自然天堂。岛上植被丰富，林木高低错落，乔木高大成林，灌木结丛成荫，林中树上栖息着成千万上只雀鸟，鸟树相依。地面各种花草植物茂盛，其中生活着的各种昆虫小动物，是雀鸟们最好的天然食物。小岛上栖息的鸟类大多以鹭鸟居多，有夜鹭、池鹭、牛背鹭、小白鹭等，还有大白鹭、白鹡鸰、鹊鸲、乌鸫、大山雀、白头鹎、红耳鹎、暗绿绣眼鸟、丝光椋鸟、普通翠鸟、白胸翡翠、珠颈斑鸠等近40种。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<!-- 广州 -->
+<view wx:if="{{getId=='20'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/4b90f603738da97793d5e286bc51f8198718e3a1?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">五羊石像</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省广州市解放北路988号越秀公园内木壳岗上
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                《五羊石像》是由尹积昌、陈本宗、孔繁纬创作的花岗岩城市雕塑，始建于1960年4月，位于广州市越秀公园内的越秀山木壳岗。
+                “五羊石像”由130多块花岗岩雕刻组砌而成，高11米，体积53立方米。五只石羊神态各异：站在高处的老羊雄劲，口衔谷穗，昂首向前方；老羊脚下是一对亲密依偎的小羊；再有一对母子羊，母羊左右回首顾盼正在安静吸乳的幼羊，幼羊则跪在母羊下吸乳，深厚母爱溢于言表。 五羊大小不一，姿态各异，造型优美，已经成为广州城市的标志。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='21'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/11385343fbf2b21193130b4e5ad172380cd79123202b?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">南越王博物馆</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广州市中山四路316号
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                广州南越王博物馆，始建于1993年，是以展示融合了历史、文物、文艺、道
+                教等内容的中国第一家专门介绍南越王朝历史和文化的博物馆。博物馆座落在著名
+                古城南越王城公园内，以南越六统王庙古迹和现存遗迹为中心，呈现出南越王朝历
+                史文化隽永灿烂的面貌，成为深受广大民众喜爱的著名的历史文化旅游景点。
+                南越王博物馆收藏了2000多件文物，古建筑建筑群也有60多处，涵盖了南越
+                王朝历史、文化、艺术、俘虏等多方面的内容。其中，最为著名的南越六统王庙，
+                是中国历史上唯一的皇帝共同祭祀圣庙，体现了南越王朝的历史沉淀。冬至的日子，
+                这里重新落成与守岁大典庆典，更是让古城山水美景变得热闹繁华。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='22'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/29381f30e924b8997bba06456e061d950b7bf6cd?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">六榕寺</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省广州市六榕路87号
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                六榕寺，位于广州市的六榕路，是广州市一座历史悠久、海内外闻名的古刹。寺中宝塔巍峨，树木葱茂，文物荟萃，历史上留下不少名人的足迹。六榕寺因苏东坡当年为寺庙题字而得名。
+                六榕寺，与光孝、华林、海幢寺并称广州佛教四大丛林。六榕寺和寺中的花塔一样，历来为人们所称颂，加之历史地位与光孝寺齐名素有“光孝以树传，净慧（六榕寺的别称）以塔显”之称。
+                六榕寺以"六榕花塔"为特色标志，曾是禅宗道场，1983年被国务院确定为汉族地区佛教全国重点寺院。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='23'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/0df431adcbef76094b36710f5096b4cc7cd98d103045?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">陈家祠堂</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省广州市中山七路
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                陈家祠堂是现存规模最大的广府传统建筑之一 [1] ，也是我国现存规模最大、保存最完好、装饰最精美的祠堂式建筑，被誉为“岭南建筑艺术的明珠”。占地面积15000平方米，建筑面积达8000平方米，建筑结构可分为三轴、三进，共有九座厅堂和六个院落。陈家祠堂集岭南建筑工艺装饰之大成，几乎全部堂、院、廊、厅、门、窗、栏、壁、屋脊、架梁都展示了岭南建筑的“三雕二塑一铸一画”即木雕、砖雕、石雕、陶塑、灰塑、铜铁铸及彩绘壁画等建筑装饰的高超技艺。二十世纪二三十年代，被收录进德国的《世界建筑艺术》和英国的《中国古代艺术建筑》两本巨著中。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='24'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/7c1ed21b0ef41bd56047223458da81cb38db3dde?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">黄埔军校</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省广州市军校路170号
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                1924年，孙中山在中国共产党和苏联的帮助下，在广州东郊的黄埔建立陆军军官学校，1926年改组为中央军事政治学校，通称黄埔军校。
+                在1927年蒋介石背叛革命以前，这是一所国共合作的革命军事学校。孙中山兼任军校总理，廖仲恺任校党代表，蒋介石任校长。中国共产党人周恩来、恽代英、萧楚女、熊雄、聂荣臻以及其他同志，曾经先后在这个学校担任政治工作和其他工作，以革命精神为当时的革命军队培养了大批骨干，其中包括不少的共产党员和共产主义青年团。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>
+
+<view wx:if="{{getId=='25'}}">
+    <view class="imgBox">
+        <image src="https://bkimg.cdn.bcebos.com/pic/96dda144ad345982b644b7f30ff431adcaef8480?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5" mode="" class="topImg" />
+    </view>
+    <view class="intruduction">
+        <view class="title">中山纪念堂</view>
+        <view class="location">
+            <image src="/images/location.png" class="icon" />
+            <view class="text">
+                广东省广州市东风中路259号
+            </view>
+        </view>
+        <view class="article">
+            <view class="p">
+                中山纪念堂于1929年1月动工，1931年11月建成。1956年，重铸的高5米的孙中山先生铜像屹立在纪念堂前。1963年对纪念堂进行了大规模翻修，屋顶全部采用蓝色琉璃瓦，在6万多平方米的公园四周增建了铁栅栏，在园内栽种了很多树木、花卉。
+                广州中山纪念堂是一座八角形建筑，外形庄严宏伟，具有浓厚的民族特色。设计师巧妙运用了建筑力学的结构原理，采用钢架和钢筋混凝土混合结构，跨度达71米的建筑空间内不设一柱。
+                广州中山纪念堂是广东省及全国重点文物保护单位，是广州人民和海外华侨为了纪念伟大的民主革命先行者孙中山先生而筹资兴建的纪念性建筑物，由我国著名建筑师吕彦直先生设计，是国家AAAA级旅游景区。
+                2022年10月25日起，广州中山纪念堂主体建筑、历史陈列馆暂停对外开放。
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="tip">不在打卡范围内,无法打卡</view>
+        <van-button size="large" color="rgba(153, 153, 153, 0.504)" round="true">打卡</van-button>
+    </view>
+</view>

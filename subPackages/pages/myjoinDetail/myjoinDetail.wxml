@@ -1,0 +1,68 @@
+<!-- map start -->
+<view class="maptype">
+    <view class="content">
+        <map id="myMap" polyline="{{polyline}}" markers="{{markers}}" scale="17"  subkey="EPKBZ-6PG63-UQZ3M-33CHO-IEW7V-CPB55" >
+        </map>
+    </view>
+</view>
+
+<scroll-view scroll-y="true" scroll-with-animation="true" class="scrollcard">
+    <view class="scrollcard-outter">
+        <view class="scrollcard-inner">
+            <view class="itemCard">
+                <view class="title">
+                    <view class="left">
+                        <view class="itemName">{{itemName}}</view>
+                        <view class="host">{{itemHost}}</view>
+                    </view>
+                    <view class="right">
+                        <view class="dataTime">{{itemDate}}</view>
+                    </view>
+                </view>
+                <view class="tag">
+                    <view class="itemMode">{{active==0?'随机点模式':active==1?'自定义模式':'猜地点模式'}}</view>
+                    <view class="itemRaceSystem">{{itemRaceSystem}}</view>
+                </view>
+                <view class="record">
+                    <view class="finishNum smallbox">
+                        <text class="number">{{user.reachPoints?user.reachPoints:'2'}}</text>
+                        <text class="text">打卡地点</text>
+                    </view>
+                    <view class="finishkm smallbox">
+                        <text class="number">{{user.totallen?user.totallen:'1'}}</text>
+                        <text class="text">已跑公里</text>
+                    </view>
+                    <view class="finishTime smallbox">
+                        <text class="number">{{user.costTime?user.costTime:'8'}}</text>
+                        <text class="text">时长/min</text>
+                    </view>
+                    <view class="rank smallbox" bindtap="goRanking">
+                        <text class="number">{{user.rank?user.rank:'1'}}/{{users.length>=1?'10':users.length}}</text>
+                        <view class="detailRank">
+                            <text class="text">排名 </text>
+                            <image src="/images/rankdetail.png" />
+                        </view>
+                    </view>
+                </view>
+                <view class="itemMessage">
+                    <image src="/images/miaoshu.png" />
+                    <text class="text">活动描述</text>
+                    <view class="message">{{itemMessage}}</view>
+                </view>
+                <view class="moveDetail">
+                    <image src="/images/shequ.png" />
+                    <text class="text">动态详情</text>
+                    <text class="arrow" bindtap="goToMoments"> > </text>
+                    <view class="detail" bindtap="goToMomentsDetail">
+                        <image src="{{defaultSrc}}"  />
+                        {{defaultDes}}
+                    </view>
+                </view>
+
+            </view>
+        </view>
+    </view>
+</scroll-view>
+<view class="share">
+    <van-button size="large" color="#689bda" round icon="guide-o" bindtap="goToShare">分享到社区</van-button>
+</view>

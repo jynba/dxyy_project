@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "share-box": "/subPackages/components/shareBox/index"
+    },
+    "enablePullDownRefresh": false
+  }

@@ -1,0 +1,36 @@
+<view class="myJoinItem" wx:for="{{activitys}}">
+    <!-- 小圆点 -->
+    <view class="dot"></view>
+    <!-- 小圆点后的日期和时间 -->
+    <view class="dateTime">{{item.itemDate}}</view>
+    <!-- 活动卡片 -->
+    <view class="card">
+        <!-- 活动标题 -->
+        <view class="title">
+            <!-- 活动模式 -->
+            <view class="mode">{{item.mode}}</view>
+            <!-- 活动名称 -->
+            <view class="itemName">{{item.itemName}}</view>
+        </view>
+        <!-- 卡片中间部分 -->
+        <view class="more">
+            <!-- 主办方 -->
+            <view class="host">主办方：{{item.itemHost}}</view>
+            <!-- 打卡地点数 -->
+            <view class="finishNum">打卡地点数：{{item.reachPoints?item.reachPoints:'2'}}个</view>
+            <!-- 已跑公里 -->
+            <view class="finishkm">已跑公里：{{item.totallen?item.totallen:'1'}}公里</view>
+            <!-- 跑步时长 -->
+            <view class="finishTime">跑步时长：{{item.costTime?item.costTime:'8'}}min</view>
+            <!-- 活动排名 -->
+            <view class="rank">活动排名：{{item.rank?item.rank:"1"}}/{{item.users.length>1?item.users.length:"10"}}</view>
+        </view>
+        <!-- 底部 -->
+        <view class="bottom">
+            <!-- 活动赛制 -->
+            <view class="raceSystem">#{{item.itemRaceSystem}}</view>
+            <!-- 查看详情 -->
+            <view class="detail" bindtap="getDetail" data-id="{{item._id}}">查看详情 ></view>
+        </view>
+    </view>
+</view>

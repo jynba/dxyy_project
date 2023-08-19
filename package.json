@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@vant/weapp": "^1.10.11",
-    "miniprogram-sm-crypto": "^0.3.11"
+    "miniprogram-sm-crypto": "^0.3.11",
+    "wxml-to-canvas": "^1.1.1"
   }
 }

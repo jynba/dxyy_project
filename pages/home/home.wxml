@@ -1,0 +1,132 @@
+<view class="top">
+    <view class="title">
+        <view class="subtitle">
+            赛事资讯
+        </view>
+        <view class="more" bindtap="goMoreNews">
+            <text>查看更多</text>
+            <van-icon name="arrow" />
+        </view>
+
+    </view>
+    <view class="news">
+        <swiper circular interval="4000" autoplay>
+            <swiper-item bindtap="goNewsDetail" data-index="0">
+                <image src="/images/news1_1.png" mode="aspectFill" class="new"></image>
+                <view class="text">古驿道定向致敬华南教育历史，探索“体育+”高质量发展</view>
+                <view class="bottom">
+                    <image src="/images/time.png" class="time" />
+                    <text class="newsTime">2023/03/19</text>
+                </view>
+            </swiper-item>
+            <swiper-item bindtap="goNewsDetail" data-index="1">
+                <image src="/images/news2_1.jpg" mode="aspectFill" class="new"></image>
+                <view class="text">全国定向锦标赛在重庆大足开赛</view>
+                <view class="bottom">
+                    <image src="/images/time.png" class="time" />
+                    <text class="newsTime">2023/03/27</text>
+                </view>
+            </swiper-item>
+            <swiper-item bindtap="goNewsDetail" data-index="2">
+                <image src="/images/news3_1.png" mode="aspectFill" class="new"></image>
+                <view class="text">“长征路上”定向越野赛綦江开跑</view>
+                <view class="bottom">
+                    <image src="/images/time.png" class="time" />
+                    <text class="newsTime">2023/03/12</text>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>
+<view>
+    <van-notice-bar mode="link" left-icon="volume-o" text="欢迎分享您设计的比赛，我们将择优展示如下" bind:click="goShare" />
+</view>
+<view class="activity">
+    <view class="subtitle">最新活动</view>
+    <view class="itemList">
+        <view class="item" bindtap="goActivityDetail" data-eventindex="0">
+            <image src="https://636c-cloud-4g0etb4u9d3975e2-1305558654.tcb.qcloud.la/covers/DongGuan.jpg?sign=5ca809d15f986c52d2dd12c230ed64dd&t=1680279334" mode="" />
+            <view class="right">
+                <view class="itemName">
+                    走读红色东莞，重温革命史迹
+                </view>
+                <view class="rightBottom">
+                    <view class="beginTime">
+                        04/01
+                    </view>
+                    <view class="line">
+                        |
+                    </view>
+                    <view class="location">
+                        广东 · 东莞
+                    </view>
+                </view>
+
+            </view>
+        </view>
+        <view class="item" bindtap="goActivityDetail" data-eventindex="1">
+            <image src="https://636c-cloud-4g0etb4u9d3975e2-1305558654.tcb.qcloud.la/covers/ChaoZhou.jpg?sign=2a98c87e852c1bbbeb25485179ef3d0a&t=1680279383" mode="" />
+            <view class="right">
+                <view class="itemName">
+                    打卡潮州八景，探寻千年故事
+                </view>
+                <view class="rightBottom">
+                    <view class="beginTime">
+                        03/25
+                    </view>
+                    <view class="line">
+                        |
+                    </view>
+                    <view class="location">
+                        广东 · 潮州
+                    </view>
+                </view>
+
+
+            </view>
+        </view>
+        <view class="item" bindtap="goActivityDetail" data-eventindex="2">
+            <image src="https://636c-cloud-4g0etb4u9d3975e2-1305558654.tcb.qcloud.la/covers/GuangZhou.png?sign=7d9ddef34252f463a5312851398b3618&t=1680279303" mode="" />
+            <view class="right">
+                <view class="itemName">
+                    岭南文化探秘: 一场与广州地标建筑的邂逅之旅
+                </view>
+                <view class="rightBottom">
+                    <view class="beginTime">
+                        03/18
+                    </view>
+                    <view class="line">
+                        |
+                    </view>
+                    <view class="location">
+                        广东 · 广州
+                    </view>
+                </view>
+
+            </view>
+        </view>
+        <view class="item" bindtap="goActivityDetail" data-eventindex="3">
+            <image src="https://636c-cloud-4g0etb4u9d3975e2-1305558654.tcb.qcloud.la/covers/ShunDe.jpg?sign=515e0eecb570b4f043d1e9e42a975715&t=1680280740" mode="" />
+            <view class="right">
+                <view class="itemName">
+                    打卡顺峰山公园，和绿色自然亲密接触
+                </view>
+                <view class="rightBottom">
+                    <view class="beginTime">
+                        03/15
+                    </view>
+                    <view class="line">
+                        |
+                    </view>
+                    <view class="location">
+                        广东 · 佛山
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="noMore">
+        没有更多活动了
+    </view>
+    </view>
+
+</view>

@@ -1,0 +1,43 @@
+<view bindtap="goNewsDetail" data-index="3" class="news">
+    <image src="https://xhimg.sports.cn/Image/allimg/230330/6-23033014322HS.jpg" mode="aspectFill" class="image"></image>
+    <view class="text">全国定向锦标赛在重庆大足落幕</view>
+    <view class="bottom">
+        <image src="/images/time.png" class="timeIcon" />
+        <text class="newsTime">2023-03-30</text>
+    </view>
+</view>
+<view bindtap="goNewsDetail" data-index="4" class="news">
+    <image src="https://res.zuitaian.cn/d/CQig1xvK/202303/642018e436949.jpg" mode="aspectFill" class="image"></image>
+    <view class="text">肥城首届乡村振兴山地定向越野挑战赛开赛</view>
+    <view class="bottom">
+        <image src="/images/time.png" class="timeIcon" />
+        <text class="newsTime">2023-03-27</text>
+    </view>
+</view>
+<view bindtap="goNewsDetail" data-index="5" class="news">
+    <image src="http://i0.hexun.com/2023-03-24/208084036.png" mode="aspectFill" class="image"></image>
+    <view class="text">定向越野盛宴！2023年“中国杯”国际定向越野巡回赛苏州太湖生态岛站开赛在即</view>
+    <view class="bottom">
+        <image src="/images/time.png" class="timeIcon" />
+        <text class="newsTime">2023-03-24</text>
+    </view>
+</view>
+<view bindtap="goNewsDetail" data-index="6" class="news">
+    <image src="https://imgs.rednet.cn/data/24/IMAGE_TENANT_LIB/IMAGE/7006601/2023/3/18/3d98ec3856024bb88c0b183f3c2b7972.jpg" mode="aspectFill" class="image"></image>
+    <view class="text">“油”我陪伴陪你出彩 记一场油菜花海里的亲子趣味定向越野赛</view>
+    <view class="bottom">
+        <image src="/images/time.png" class="timeIcon" />
+        <text class="newsTime">2023-03-18</text>
+    </view>
+</view>
+<view bindtap="goNewsDetail" data-index="7" class="news">
+    <image src="https://img.rednet.cn/2022/11-04/1667559776389-9ugvlrf53x.png" mode="aspectFill" class="image"></image>
+    <view class="text">定向越野抢答赛开赛！“全民健身”推动党的二十大精神走深走实</view>
+    <view class="bottom">
+        <image src="/images/time.png" class="timeIcon" />
+        <text class="newsTime">2022-11-04</text>
+    </view>
+</view>
+<view class="noMore">
+    没有更多资讯了
+</view>

@@ -6,19 +6,16 @@ Page({
     data: {
         //  加入活动有关
         showJoinActivity: false, //加入活动的底部弹出框是否展示，初始不展示，点击加入活动才展示
-
+        teamNumber: "",//队伍编号
         activityID: "", //活动ID
         activitypassword: "", //活动密码
         activityName: "", //活动内昵称
-        active:null,//活动模式
+        active: null,//活动模式
         openid: '', //用户的openid
         avatarUrl: '', //用户的头像链接
         // 列表数据展示有关
-        isHaveAllData: false, //是否有”全部活动“数据
-        isHaveGoingData: false, //是否有”正在进行“数据
-        isHaveReverseData: false, //是否有”未开始“数据
-        isHaveOverData: false, //是否有”已结束“数据
-        
+        isHaveData: false, //是否今日活动数据
+
         eventList: [], //活动列表一开始为空数组
     },
 
@@ -39,8 +36,6 @@ Page({
                 console.log("失败", err)
             })
         }
-
-
         // 拿到用户头像的链接
         let avatarUrl = wx.getStorageSync('avatarUrl');
         this.setData({
@@ -57,40 +52,28 @@ Page({
         if (eventList == '') return;
         this.setData({
             eventList: eventList,
-            isHaveAllData: true,
         })
         this.showByDate();
     },
-    // 根据日期分类展示进行中（1）、未开始（0）、已结束（2）
+    // 根据日期分类展示今日活动
     showByDate() {
         let nowDate = new Date().getTime(); //获取当前时间戳
         // 获取各个活动选定日期的时间戳
         let eventList = this.data.eventList;
-        let selectedDatestamp = '';
-        for (let i = 0; i < eventList.length; i++) {
-            selectedDatestamp = eventList[i].selectedDatestamp;
-            if (nowDate < selectedDatestamp) { //活动未开始
-                eventList[i].status = 0;
-                this.setData({
-                    isHaveReverseData: true,
-                    eventList
-                })
-            } else if (nowDate - selectedDatestamp < 86400000) { //活动进行中,一天是86400000毫秒
-                eventList[i].status = 1;
-                this.setData({
-                    isHaveGoingData: true,
-                    eventList
-                })
-            } else { //活动已结束
-                eventList[i].status = 2;
-                this.setData({
-                    isHaveOverData: true,
-                    eventList
-                })
-            }
+
+        eventList = eventList.filter(item => nowDate - item.selectedDatestamp < 86400000);
+
+        if (eventList.length > 0) {
+            this.setData({
+                isHaveData: true
+            })
         }
+        this.setData({
+            eventList,
+        })
     },
-    // 删除某一活动
+
+    // 删除某一活动 （待定）
     onDeleteItem(event) {
         let that = this;
         const {
@@ -120,11 +103,6 @@ Page({
                 });
                 break;
         }
-    },
-
-    // 加入
-    onOpen(e) {
-        console.log(e);
     },
 
     //   关闭加入活动弹出框
@@ -170,29 +148,16 @@ Page({
                 if (res.data == '') {
                     Toast('活动ID或密码错误!');
                 }
-                // 已加入过该活动
-                // else if (res.data[0].users.find(item => item.openid == this.data.openid)) {
-                //     Toast('   您已加入过该活动\n请前往活动列表查看!');
-                // }
-                // 是活动发起人
-                // else if (res.data.find(item => item._openid == this.data.openid)) {
-                //     Toast('您是活动发起人\n  无需加入活动');
-                // }
-                // 匹配成功，1.将当前用户名和openid存入users
+                else if (typeof (res.data[0].endState) !== 'undefined' && res.data[0].endState == true) {
+                    isMatch = false;
+                    Toast('该活动已结束!');
+                }
+                else if (res.data[0].itemRaceSystem == '团体赛' && ( res.data[0].launchTeamNumber !== '' && res.data[0].launchTeamNumber < that.data.teamNumber || that.data.teamNumber <= 0 ||that.data.teamNumber == "")) {
+                    isMatch = false;
+                    Toast('队伍编号有误!');
+                }
                 else {
                     isMatch = true;
-                    if(!res.data[0].users || res.data[0].users.findIndex(item => item.openid === that.data.openid)===-1)
-                    db.collection('activity')
-                        .doc(_id)
-                        .update({
-                            data: {
-                                users: _.push({
-                                    openid: this.data.openid,
-                                    activityName: this.data.activityName,
-                                    avatarUrl: this.data.avatarUrl
-                                })
-                            }
-                        })
                     // 2.将该活动信息存入缓存
                     let tempList = this.data.eventList;
                     let isFind = tempList.find(item => res.data[0]._id == item._id);
@@ -209,7 +174,7 @@ Page({
                             selectedDatestamp: res.data[0].selectedDatestamp,
                             returnPosMessage: res.data[0].returnPosMessage,
                             markers: res.data[0].markers,
-                            active:res.data[0].active,
+                            active: res.data[0].active,
                         })
                         // console.log(tempList);
                         this.setData({
@@ -228,14 +193,16 @@ Page({
     async toConfirmJoinActivity() {
         if (this.emptyTips()) return; //某项是否为空
         let isMatch = await this.matchActivity(); //是否匹配
-        if (!isMatch) return;
+        if (!isMatch) {
+            return;
+        }
 
         this.setData({
             showJoinActivity: false
         });
         Toast.success('加入成功')
         wx.navigateTo({
-            url: '/pages/gamemap/gamemap?id=' + this.data.activityID + this.data.activitypassword + '&name=' + this.data.activityName,
+            url: '/subPackages/pages/gamemap/gamemap?id=' + this.data.activityID + this.data.activitypassword + '&name=' + this.data.activityName+'&teamNumber='+this.data.teamNumber,
         })
         this.setData({
             activityID: "",
@@ -246,7 +213,7 @@ Page({
     // 点击发起活动页面跳转
     launchActivity() {
         wx.navigateTo({
-            url: '/pages/launch/launch'
+            url: '/subPackages/pages/launch/launch'
         })
     }
 })

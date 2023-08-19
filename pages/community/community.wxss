@@ -1,0 +1,190 @@
+.background {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    background: #fff;
+    display: flex;
+    flex-flow: row;
+  }
+  
+  .waterfall {
+    padding: 10rpx 35rpx;
+  }
+  
+  .header {
+    width: 680rpx;
+    height: 65rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 20rpx;
+    line-height: 65rpx;
+    font-size: 32rpx;
+    color: #999;
+  }
+  .header text {
+    font-size: 32rpx;
+    color: #000;
+  }
+  .header_after{
+    display: inline-block;
+    margin-right: 10rpx;
+  }
+  
+  .header_afterimg{
+    width: 35rpx;
+    height: 35rpx;
+    margin: 0 0;
+    vertical-align: middle;
+  }
+  
+  /*展示的选项 */
+  .cu-tag {
+      font-size: 24rpx;
+      vertical-align: middle;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 0rpx 16rpx;
+      height: 48rpx;
+      font-family: Helvetica Neue, Helvetica, sans-serif;
+      white-space: nowrap;
+  }
+  
+  .padding{
+      padding-bottom: 30rpx;
+  }
+  .bg-white {
+      background-color: white;
+      color: rgb(102, 100, 100);
+  }
+  .round {
+      border-radius: 5000rpx;
+  }
+  .bg-blue {
+      background-color: #689bda;
+      color: white;
+  }
+  
+  
+  .campus_community{
+    overflow: hidden;
+  }
+  .community_content{
+    width: 680rpx;
+    padding: 0 0;
+  }
+  .community_content .pro_l {
+    width: 330rpx;
+    float: left;
+  }
+  .community_content .pro_r{
+    width: 330rpx;
+    float: right;
+  }
+  .community_content:after{
+    content: "";
+    width: 336rpx;
+  }
+  .community_item {
+    display: inline-block;
+    background:#fff;
+    margin-bottom: 35rpx;
+    border-radius: 10rpx;
+    width: 330rpx;
+    position: relative;
+  }
+  .community_item .item-img{
+    width:330rpx;
+    height: auto;
+    border-radius:10rpx;
+  }
+  
+  .title{
+    display: block;
+    flex-direction: row;
+    white-space: nowrap;/*合并空白*/
+    padding-bottom: 18rpx;
+    padding-left: 10rpx;
+    width: 310rpx;
+    white-space: pre-line;
+  }
+  
+  .text_title{
+    display: block;
+    width: 310rpx; /* 必须定义宽度 */
+    color: rgb(37, 37, 37);
+    font-size: 30rpx;
+    white-space: pre-line;
+  }
+  
+  .user_content{
+    padding-left: 10rpx;
+    flex-direction: row;
+    display: flex;
+    white-space: nowrap;/*合并空白*/
+    justify-content: space-between;
+  }
+  .user{
+    position: relative;
+  }
+  .user_info{
+    display: flex;
+    position: relative;
+    width: auto;
+  
+  }
+  
+  .user1_ava{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 100%;
+  }
+  .user_Name{
+    margin-left: 10rpx;
+    line-height: 40rpx;
+    font-size: 22rpx;
+    color: #666;
+  }
+  
+  /* .user_ava{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    overflow: hidden;
+  } */
+  
+  .like{
+    position: relative;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    right: 0rpx;
+  }
+  .like_icon{
+    width: 38rpx;
+    height: 33rpx;
+  }
+  .like_icon image{
+    width: 100%;
+    height: 100%;
+  }
+  .like_nums{
+    margin-right: 10rpx;
+    margin-left: 10rpx;
+    display: inline;
+    font-size: 35rpx;
+    color: #666;
+  }
+  
+  .goTop{
+    height: 110rpx;
+    width: 110rpx;
+    position: fixed;
+    bottom: 90rpx;
+    right: 35rpx;
+    border-radius: 50%;
+    z-index: 999;
+  }
