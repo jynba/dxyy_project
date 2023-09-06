@@ -32,6 +32,8 @@
 2. 进入项目目录：`cd dxyy_project`
 
 ## 使用说明
+作品演示视频
+链接：https://pan.baidu.com/s/10vNRj9PqyQaLLDJPc3kXEQ?pwd=utwv 
 
 1. 打开微信小程序。
 2. 登录你的账号，或者创建一个新账号。
